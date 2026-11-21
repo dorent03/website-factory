@@ -1,0 +1,46 @@
+{
+  "id": "de.consent.required-determination",
+  "title": "Einwilligungsbedarf je Speicherung/Zugriff bestimmt",
+  "description": "Jede Speicherung von bzw. jeder Zugriff auf Informationen im Endgerät (Cookies, localStorage, Pixel, Fingerprinting, SDKs) ist zu klassifizieren: unbedingt erforderlich für den ausdrücklich gewünschten Dienst (§ 25 Abs. 2 Nr. 2 TDDDG) oder einwilligungsbedürftig (§ 25 Abs. 1 TDDDG). Die Klassifizierung folgt der DSK-OH Digitale Dienste (Version 1.2).",
+  "jurisdiction": "DE",
+  "category": "consent",
+  "sources": [
+    {
+      "title": "§ 25 TDDDG – Schutz der Privatsphäre bei Endeinrichtungen",
+      "url": "https://www.gesetze-im-internet.de/ttdsg/__25.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+      "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+      "publisher": "Datenschutzkonferenz (DSK)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "consent.required-determination",
+    "params": {
+      "classifyStorage": [
+        "cookies",
+        "localStorage",
+        "sessionStorage",
+        "indexedDB",
+        "pixels",
+        "fingerprinting"
+      ],
+      "exemptOnly": "strictlyNecessary"
+    }
+  },
+  "manualCheck": "Grenzfälle (z. B. reichweitenmessende Analyse ohne Cookies, Load-Balancer-, Sprach- oder Warenkorb-Cookies, Consent-Speicherung) nach DSK-OH beurteilen. LAWYER REVIEW bei Einstufung von Analyse als \"unbedingt erforderlich\"."
+}

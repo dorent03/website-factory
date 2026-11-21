@@ -1,0 +1,58 @@
+{
+  "id": "de.accessibility.bfsg-applicability",
+  "title": "BFSG-Anwendbarkeit bestimmen",
+  "description": "Das BFSG gilt seit 28.06.2025 u. a. für \"Dienstleistungen im elektronischen Geschäftsverkehr\": Websites/Apps, über die Verbraucher elektronisch einen Verbrauchervertrag abschließen können (Shop, Online-Buchung mit Vertragsschluss). Reine B2B-Angebote und reine Informations-/Visitenkarten-Websites ohne Vertragsschluss fallen nach dem Wortlaut nicht darunter. Kleinstunternehmen (< 10 Beschäftigte und Jahresumsatz oder Bilanzsumme ≤ 2 Mio. EUR), die Dienstleistungen erbringen, sind ausgenommen (§ 3 Abs. 3 BFSG). Ergebnis ist ein Status (applies / exempt-micro / not-in-scope / unclear), nie eine Prozentzahl.",
+  "jurisdiction": "DE",
+  "category": "accessibility",
+  "sources": [
+    {
+      "title": "§ 1 BFSG – Zweck und Anwendungsbereich",
+      "url": "https://www.gesetze-im-internet.de/bfsg/__1.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 2 BFSG – Begriffsbestimmungen",
+      "url": "https://www.gesetze-im-internet.de/bfsg/__2.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 3 BFSG – Barrierefreiheit (Kleinstunternehmen-Ausnahme Abs. 3)",
+      "url": "https://www.gesetze-im-internet.de/bfsg/__3.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "Bundesfachstelle Barrierefreiheit – Das Barrierefreiheitsstärkungsgesetz (BFSG)",
+      "url": "https://www.bundesfachstelle-barrierefreiheit.de/DE/Barrierefreiheitsstaerkungsgesetz/barrierefreiheitsstaerkungsgesetz_node.html",
+      "publisher": "Bundesfachstelle Barrierefreiheit (bei der Deutschen Rentenversicherung Knappschaft-Bahn-See)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "sellsToConsumers"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "accessibility.bfsg-applicability",
+    "params": {
+      "inScopeIf": [
+        "sellsToConsumers && (hasShop || hasBooking)"
+      ],
+      "microEnterpriseThresholds": {
+        "employeesLessThan": 10,
+        "turnoverOrBalanceMaxEur": 2000000
+      }
+    }
+  },
+  "manualCheck": "Beschäftigtenzahl, Jahresumsatz und Bilanzsumme beim Kunden erfragen (nicht im Profil). LAWYER REVIEW bei Grenzfällen (Terminbuchung ohne Entgelt, Anfrageformular mit späterem Vertragsschluss, B2B-Shop ohne Verbraucherausschluss)."
+}

@@ -1,0 +1,43 @@
+{
+  "id": "de.privacy.images-of-persons",
+  "title": "Herkunft und Rechte an Bildern (Personenabbildungen)",
+  "description": "Für jedes Bild/Video muss die Herkunft bekannt sein (eigene Aufnahme, Lizenz, Stock-Lizenz, KI-generiert). Erkennbare Personen nur mit Einwilligung (§ 22 KUG) bzw. DSGVO-Rechtsgrundlage; Mitarbeiterfotos besonders prüfen. Urheberrechtliche Lizenzprüfung ist nicht Gegenstand dieser Kategorie (siehe README).",
+  "jurisdiction": "DE",
+  "category": "privacy",
+  "sources": [
+    {
+      "title": "§ 22 KunstUrhG – Recht am eigenen Bild",
+      "url": "https://www.gesetze-im-internet.de/kunsturhg/__22.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "assets.provenance-known",
+    "params": {
+      "requireFields": [
+        "source",
+        "license",
+        "containsIdentifiablePersons"
+      ],
+      "blockIfUnknown": true
+    }
+  },
+  "manualCheck": "Bei Abbildungen erkennbarer Personen (insb. Beschäftigter) schriftliche Einwilligung bzw. Rechtsgrundlage nachweisen lassen."
+}

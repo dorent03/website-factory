@@ -1,0 +1,50 @@
+{
+  "id": "de.privacy.fonts-local",
+  "title": "Schriften lokal hosten oder dokumentieren",
+  "description": "Das Nachladen von Webfonts von Dritt-Servern (z. B. fonts.googleapis.com, fonts.gstatic.com, use.typekit.net) überträgt die IP-Adresse ohne Notwendigkeit; Selbst-Hosting ist technisch problemlos und vermeidet das Problem. Deutsche Zivilgerichte haben hierfür bereits Unterlassung und Schadensersatz zugesprochen (Rechtsprechung nur als Orientierung).",
+  "jurisdiction": "DE",
+  "category": "privacy",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 25 TDDDG – Schutz der Privatsphäre bei Endeinrichtungen",
+      "url": "https://www.gesetze-im-internet.de/ttdsg/__25.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+      "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+      "publisher": "Datenschutzkonferenz (DSK)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "fonts.no-external-without-documentation",
+    "params": {
+      "externalFontHosts": [
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "use.typekit.net",
+        "fonts.bunny.net"
+      ],
+      "preferSelfHosted": true
+    }
+  },
+  "manualCheck": null
+}

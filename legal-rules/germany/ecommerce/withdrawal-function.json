@@ -1,0 +1,52 @@
+{
+  "id": "de.ecommerce.withdrawal-function",
+  "title": "Elektronische Widerrufsfunktion (\"Vertrag widerrufen\") – neu seit 19.06.2026",
+  "description": "Wird ein Fernabsatzvertrag über eine Online-Benutzeroberfläche geschlossen, muss während der Widerrufsfrist eine ständig verfügbare, hervorgehobene Widerrufsfunktion bereitstehen (Beschriftung \"Vertrag widerrufen\" o. ä.), die Name, Vertragsidentifikation und Kommunikationsweg abfragt, mit Bestätigungsfunktion (\"Widerruf bestätigen\") und unverzüglicher Eingangsbestätigung auf dauerhaftem Datenträger (§ 356a BGB, eingeführt durch BGBl. 2026 I Nr. 28 zur Umsetzung der RL (EU) 2023/2673). Gilt auch für online gebuchte entgeltliche Dienstleistungen.",
+  "jurisdiction": "DE",
+  "category": "ecommerce",
+  "sources": [
+    {
+      "title": "§ 356a BGB – Elektronische Widerrufsfunktion bei Fernabsatzverträgen",
+      "url": "https://www.gesetze-im-internet.de/bgb/__356a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "Gesetz zur Änderung des Verbrauchervertrags- und des Versicherungsvertragsrechts sowie zur Änderung des Behandlungsvertragsrechts, BGBl. 2026 I Nr. 28 vom 05.02.2026",
+      "url": "https://www.recht.bund.de/bgbl/1/2026/28/VO.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz (Bundesgesetzblatt, recht.bund.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "Richtlinie (EU) 2023/2673 – Fernabsatz von Finanzdienstleistungen / Widerrufsfunktion (Art. 11a RL 2011/83/EU)",
+      "url": "https://eur-lex.europa.eu/eli/dir/2023/2673/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "sellsToConsumers",
+      "hasShop"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "withdrawal-function",
+      "labels": [
+        "Vertrag widerrufen",
+        "Widerruf bestätigen"
+      ],
+      "proposedCheck": "ecommerce.withdrawal-function-present"
+    }
+  },
+  "manualCheck": "Zweistufige Widerrufsfunktion und automatische Eingangsbestätigung im Shop/Buchungssystem testen. Gilt auch, wenn über hasBooking entgeltliche Fernabsatzverträge geschlossen werden (Proposed condition: concludesDistanceContractsOnline)."
+}

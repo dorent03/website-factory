@@ -1,0 +1,34 @@
+{
+  "id": "de.imprint.professional-liability-insurance",
+  "title": "Angaben zur Berufshaftpflichtversicherung",
+  "description": "Besteht eine Berufshaftpflichtversicherung, sind Name und Anschrift des Versicherers und räumlicher Geltungsbereich mitzuteilen (§ 2 Abs. 1 Nr. 11 DL-InfoV); für einige Berufe ist sie Pflichtversicherung. Kein Feld im CustomerLegalProfile vorhanden (siehe README, Proposed fields).",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 2 DL-InfoV – Stets zur Verfügung zu stellende Informationen",
+      "url": "https://www.gesetze-im-internet.de/dlinfov/__2.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "isRegulatedProfession"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "professional-liability-insurance"
+    }
+  },
+  "manualCheck": "Prüfen, ob eine (Pflicht-)Berufshaftpflichtversicherung besteht und ob Versicherer, Anschrift und Geltungsbereich auf der Website oder anderweitig nach § 2 Abs. 2 DL-InfoV bereitgestellt werden."
+}

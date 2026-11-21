@@ -1,0 +1,44 @@
+{
+  "id": "de.consent.newsletter-opt-in",
+  "title": "Newsletter nur mit nachweisbarer ausdrücklicher Einwilligung",
+  "description": "E-Mail-Werbung erfordert vorherige ausdrückliche Einwilligung (§ 7 Abs. 2 Nr. 2 UWG; Art. 6 Abs. 1 lit. a, Art. 7 DSGVO), Ausnahme nur für Bestandskunden nach § 7 Abs. 3 UWG. Zum Nachweis ist ein Double-Opt-in-Verfahren üblich. Anmeldeformular nur mit E-Mail als Pflichtfeld.",
+  "jurisdiction": "DE",
+  "category": "consent",
+  "sources": [
+    {
+      "title": "§ 7 UWG – Unzumutbare Belästigungen",
+      "url": "https://www.gesetze-im-internet.de/uwg_2004/__7.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "hasNewsletter"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "forms.data-minimization",
+    "params": {
+      "form": "newsletter",
+      "maxRequiredFields": [
+        "email"
+      ],
+      "forbidPreCheckedConsent": true
+    }
+  },
+  "manualCheck": "Prüfen, dass ein Double-Opt-in mit Protokollierung (Zeitpunkt, IP, Bestätigung) aktiv ist und die Bestätigungsmail keine Werbung enthält. LAWYER REVIEW bei Nutzung der Bestandskundenausnahme."
+}

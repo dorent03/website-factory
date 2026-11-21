@@ -1,0 +1,36 @@
+{
+  "id": "de.ecommerce.odr-link-obsolete",
+  "title": "Veralteten OS-Plattform-Link entfernen",
+  "description": "Die EU-OS-Plattform wurde eingestellt und die Verordnung (EU) Nr. 524/2013 mit Wirkung vom 20.07.2025 aufgehoben (VO (EU) 2024/3228). Die frühere Pflicht, auf die OS-Plattform (ec.europa.eu/consumers/odr) zu verlinken, ist entfallen; ein weiter bestehender Link ist tot und der Hinweis irreführend. Vorlagen/Generatoren dürfen ihn nicht mehr erzeugen.",
+  "jurisdiction": "EU",
+  "category": "ecommerce",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2024/3228 – Aufhebung der VO (EU) Nr. 524/2013 (Einstellung der OS-Plattform)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/3228/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "minor",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "odr-link",
+      "forbiddenUrls": [
+        "ec.europa.eu/consumers/odr"
+      ],
+      "proposedCheck": "content.no-obsolete-odr-link"
+    }
+  },
+  "manualCheck": "Impressum, AGB und Footer auf Verweise auf die OS-Plattform/Art. 14 ODR-VO prüfen und entfernen."
+}

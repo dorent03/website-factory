@@ -1,0 +1,36 @@
+{
+  "id": "de.imprint.liquidation-status",
+  "title": "Hinweis auf Abwicklung/Liquidation",
+  "description": "AG, KGaA und GmbH (inkl. UG) in Abwicklung oder Liquidation müssen dies angeben (§ 5 Abs. 1 Nr. 7 DDG).",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [
+      "gmbh",
+      "ug",
+      "ag"
+    ],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "liquidation-status"
+    }
+  },
+  "manualCheck": "Registerauszug prüfen; befindet sich die Gesellschaft in Liquidation, muss das Impressum dies (mit Liquidatoren als Vertretern) ausweisen."
+}

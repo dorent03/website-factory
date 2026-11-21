@@ -1,0 +1,41 @@
+{
+  "id": "de.ecommerce.withdrawal-information",
+  "title": "Widerrufsbelehrung und Muster-Widerrufsformular",
+  "description": "Bei Fernabsatzverträgen mit Verbrauchern: Information über Bedingungen, Fristen und Verfahren des Widerrufsrechts sowie das Muster-Widerrufsformular (Art. 246a § 1 Abs. 2 EGBGB); fehlerhafte Belehrung verlängert die Widerrufsfrist. Muss seit 19.06.2026 auch auf die elektronische Widerrufsfunktion abgestimmt sein.",
+  "jurisdiction": "DE",
+  "category": "ecommerce",
+  "sources": [
+    {
+      "title": "Art. 246a § 1 EGBGB – Informationspflichten bei Fernabsatzverträgen",
+      "url": "https://www.gesetze-im-internet.de/bgbeg/art_246a__1.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 356a BGB – Elektronische Widerrufsfunktion bei Fernabsatzverträgen",
+      "url": "https://www.gesetze-im-internet.de/bgb/__356a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "sellsToConsumers",
+      "hasShop"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "withdrawal-information"
+    }
+  },
+  "manualCheck": "LAWYER REVIEW: Widerrufsbelehrung muss zum Vertragstyp passen (Waren, digitale Inhalte, Dienstleistungen) und die amtlichen Muster in der seit 19.06.2026 geltenden Fassung verwenden; Musterfassung gegen das aktuelle EGBGB prüfen."
+}

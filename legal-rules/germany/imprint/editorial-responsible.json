@@ -1,0 +1,42 @@
+{
+  "id": "de.imprint.editorial-responsible",
+  "title": "Verantwortlicher für journalistisch-redaktionelle Inhalte",
+  "description": "Bei journalistisch-redaktionell gestalteten Angeboten (z. B. Blog/News mit meinungsbildendem Charakter) ist zusätzlich ein Verantwortlicher mit Name und Anschrift zu benennen; bei mehreren ist der jeweilige Teil anzugeben (§ 18 Abs. 2 MStV). Hinweis: Viele Generatoren schreiben noch \"§ 55 Abs. 2 RStV\" – diese Norm ist seit 2020 durch den MStV ersetzt.",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 18 Medienstaatsvertrag (MStV) – Informationspflichten und Auskunftsrechte (Text gilt ab 01.12.2025)",
+      "url": "https://www.gesetze-bayern.de/Content/Document/MStV-18",
+      "publisher": "Bayerische Staatskanzlei (BAYERN.RECHT, amtliches Landesrechtsportal)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "hasJournalisticContent"
+    ]
+  },
+  "requiredFields": [
+    "editorialResponsible"
+  ],
+  "automatedCheck": {
+    "checkId": "imprint.fields-present",
+    "params": {
+      "fields": [
+        "editorialResponsible"
+      ],
+      "forbiddenCitations": [
+        "§ 55 Abs. 2 RStV",
+        "§ 55 RStV"
+      ]
+    }
+  },
+  "manualCheck": "Prüfen, dass die benannte Person ständigen Aufenthalt im Inland hat, unbeschränkt geschäftsfähig und strafrechtlich verfolgbar ist und die Fähigkeit zur Bekleidung öffentlicher Ämter nicht verloren hat (§ 18 Abs. 2 S. 3 MStV). LAWYER REVIEW, ob ein Unternehmensblog als journalistisch-redaktionell einzustufen ist."
+}

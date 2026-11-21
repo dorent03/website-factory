@@ -1,0 +1,52 @@
+{
+  "id": "de.privacy.third-country-transfers",
+  "title": "Drittlandübermittlungen ausgewiesen und abgesichert",
+  "description": "Übermittlungen in Drittländer (z. B. USA) nur bei Angemessenheitsbeschluss oder geeigneten Garantien (Art. 44 ff. DSGVO). USA: EU-US Data Privacy Framework (Durchführungsbeschluss 2023/1795) gilt nur für zertifizierte Empfänger; gegen das Urteil des EuG (T-553/23) ist das Rechtsmittel C-703/25 P anhängig.",
+  "jurisdiction": "EU",
+  "category": "privacy",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "Durchführungsbeschluss (EU) 2023/1795 – Angemessenheit EU-US Data Privacy Framework",
+      "url": "https://eur-lex.europa.eu/eli/dec_impl/2023/1795/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "EuGH Rs. C-703/25 P (Latombe/Kommission) – Rechtsmittel gegen EuG T-553/23",
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-703/25",
+      "publisher": "Gerichtshof der Europäischen Union (curia.europa.eu)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "privacy.services-documented",
+    "params": {
+      "requiredTopics": [
+        "thirdCountryTransfer"
+      ],
+      "transferMechanisms": [
+        "adequacy",
+        "DPF",
+        "SCC",
+        "Art. 49"
+      ]
+    }
+  },
+  "manualCheck": "DPF-Zertifizierung jedes US-Empfängers auf der offiziellen DPF-Liste prüfen; bei fehlender Zertifizierung SCC/TIA dokumentieren. Status von C-703/25 P bei jeder Review prüfen."
+}

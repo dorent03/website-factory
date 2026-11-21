@@ -1,0 +1,42 @@
+{
+  "id": "de.recruiting.transport-security",
+  "title": "Bewerbungsunterlagen nur verschlüsselt übertragen",
+  "description": "Bewerbungsformulare und Uploads ausschließlich über HTTPS; keine Weiterleitung von Unterlagen per unverschlüsselter E-Mail an Sammelpostfächer ohne Schutz (Art. 32 DSGVO, § 19 Abs. 4 TDDDG).",
+  "jurisdiction": "DE",
+  "category": "recruiting",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 19 TDDDG – Technische und organisatorische Vorkehrungen",
+      "url": "https://www.gesetze-im-internet.de/ttdsg/__19.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "hasJobApplications"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "forms.transport-security",
+    "params": {
+      "form": "application",
+      "requireHttps": true,
+      "uploadsMustBeHttps": true
+    }
+  },
+  "manualCheck": "Prüfen, wie Bewerbungen nach dem Absenden weitergeleitet und gespeichert werden."
+}

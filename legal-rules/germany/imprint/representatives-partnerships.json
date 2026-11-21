@@ -1,0 +1,54 @@
+{
+  "id": "de.imprint.representatives-partnerships",
+  "title": "Vertretungsberechtigte Gesellschafter bei Personengesellschaften",
+  "description": "Für GbR, eGbR, OHG und KG nennt § 5 DDG die Vertretungsberechtigten nur für juristische Personen; die Angabe der vertretungsberechtigten Gesellschafter (bei GmbH & Co. KG: Komplementär-GmbH mit deren Geschäftsführern, vgl. § 125 HGB) ist in der Praxis üblich und wird bei fehlender natürlicher Person als Gesellschafter für Geschäftsbriefe ausdrücklich verlangt.",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 125 HGB – Angaben auf Geschäftsbriefen (OHG/KG)",
+      "url": "https://www.gesetze-im-internet.de/hgb/__125.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 2 DL-InfoV – Stets zur Verfügung zu stellende Informationen",
+      "url": "https://www.gesetze-im-internet.de/dlinfov/__2.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [
+      "gbr",
+      "egbr",
+      "ohg",
+      "kg"
+    ],
+    "conditions": []
+  },
+  "requiredFields": [
+    "representatives"
+  ],
+  "automatedCheck": {
+    "checkId": "imprint.fields-present",
+    "params": {
+      "fields": [
+        "representatives"
+      ],
+      "minItems": 1
+    }
+  },
+  "manualCheck": "LAWYER REVIEW: Ob bei Personengesellschaften alle Gesellschafter oder nur die vertretungsberechtigten zu nennen sind, ist nicht ausdrücklich geregelt; bei GmbH & Co. KG Angaben zur Komplementärin prüfen."
+}

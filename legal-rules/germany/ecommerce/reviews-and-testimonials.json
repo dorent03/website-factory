@@ -1,0 +1,41 @@
+{
+  "id": "de.ecommerce.reviews-and-testimonials",
+  "title": "Kundenbewertungen und Testimonials",
+  "description": "Werden Verbraucherbewertungen veröffentlicht, ist anzugeben, ob und wie sichergestellt wird, dass sie von tatsächlichen Kunden stammen (§ 5b Abs. 3 UWG). Die Behauptung echter Kundenbewertungen ohne angemessene Prüfung sowie gefälschte oder beauftragte Bewertungen sind stets unzulässig (Anhang Nr. 23b, 23c UWG). Testimonials/Bewertungen werden nie generiert oder erfunden.",
+  "jurisdiction": "DE",
+  "category": "ecommerce",
+  "sources": [
+    {
+      "title": "§ 5b UWG – Wesentliche Informationen (Abs. 3 Bewertungen)",
+      "url": "https://www.gesetze-im-internet.de/uwg_2004/__5b.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "Anhang zu § 3 Abs. 3 UWG – stets unzulässige geschäftliche Handlungen (Nr. 2a, 4a, 4b, 23b, 23c)",
+      "url": "https://www.gesetze-im-internet.de/uwg_2004/anhang.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "isCommercial"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "reviews-testimonials",
+      "proposedCheck": "content.reviews-provenance"
+    }
+  },
+  "manualCheck": "Für jede Bewertung/jedes Testimonial Herkunft und Einwilligung des Urhebers nachweisen lassen; Hinweis zur Echtheitsprüfung auf der Seite prüfen."
+}

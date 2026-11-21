@@ -1,0 +1,49 @@
+{
+  "id": "de.imprint.capital-disclosure",
+  "title": "Kapitalangaben nur vollständig",
+  "description": "Werden Angaben zum Kapital gemacht, müssen Stamm- bzw. Grundkapital und ggf. der Gesamtbetrag ausstehender Bareinlagen genannt werden (§ 5 Abs. 1 Nr. 1 DDG, § 35a Abs. 1 S. 2 GmbHG, § 80 Abs. 1 S. 3 AktG). Keine Pflicht, Kapital überhaupt anzugeben.",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 35a GmbHG – Angaben auf Geschäftsbriefen",
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__35a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 80 AktG – Angaben auf Geschäftsbriefen",
+      "url": "https://www.gesetze-im-internet.de/aktg/__80.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "minor",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [
+      "gmbh",
+      "ug",
+      "ag"
+    ],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "capital-disclosure",
+      "trigger": "imprintMentionsCapital"
+    }
+  },
+  "manualCheck": "Nur falls die Website Kapital nennt: prüfen, ob ausstehende Einlagen angegeben sind. Kapitalbeträge niemals ohne Nachweis aus dem Profil übernehmen."
+}

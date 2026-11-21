@@ -1,0 +1,56 @@
+{
+  "id": "de.imprint.provider-identity",
+  "title": "Name und ladungsfähige Anschrift des Anbieters",
+  "description": "Vollständiger Name (natürliche Person: Vor- und Nachname; Gesellschaft: vollständige Firma inkl. Rechtsformzusatz) und Anschrift der Niederlassung (keine Postfachadresse). Gilt nach § 5 Abs. 1 Nr. 1 DDG für geschäftsmäßige Dienste und nach § 18 Abs. 1 MStV für alle nicht ausschließlich persönlich/familiär genutzten Telemedien, daher ohne Bedingung. Fehlende Werte blockieren die Freigabe; Werte werden nie erfunden oder aus Markennamen abgeleitet.",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 18 Medienstaatsvertrag (MStV) – Informationspflichten und Auskunftsrechte (Text gilt ab 01.12.2025)",
+      "url": "https://www.gesetze-bayern.de/Content/Document/MStV-18",
+      "publisher": "Bayerische Staatskanzlei (BAYERN.RECHT, amtliches Landesrechtsportal)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 2 DL-InfoV – Stets zur Verfügung zu stellende Informationen",
+      "url": "https://www.gesetze-im-internet.de/dlinfov/__2.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [
+    "legalName",
+    "street",
+    "postalCode",
+    "city",
+    "country"
+  ],
+  "automatedCheck": {
+    "checkId": "imprint.fields-present",
+    "params": {
+      "fields": [
+        "legalName",
+        "street",
+        "postalCode",
+        "city",
+        "country"
+      ]
+    }
+  },
+  "manualCheck": "Prüfen, dass die Anschrift eine zustellungsfähige Geschäftsanschrift ist (kein Postfach; virtuelle Büroadresse nur, wenn dort tatsächlich zugestellt werden kann)."
+}

@@ -1,0 +1,50 @@
+{
+  "id": "de.privacy.contact-form-minimization",
+  "title": "Kontaktformular: Datenminimierung",
+  "description": "Nur für die Anfrage erforderliche Felder als Pflichtfelder (typisch: Name oder Anrede optional, E-Mail, Nachricht); Telefon, Adresse, Geburtsdatum optional bzw. weglassen (Art. 5 Abs. 1 lit. c, Art. 25 DSGVO). Hinweis auf Datenschutzerklärung am Formular; keine Einwilligungs-Checkbox als Pflicht, wenn Rechtsgrundlage lit. b/f ist.",
+  "jurisdiction": "DE",
+  "category": "privacy",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+      "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+      "publisher": "Datenschutzkonferenz (DSK)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "hasContactForm"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "forms.data-minimization",
+    "params": {
+      "form": "contact",
+      "maxRequiredFields": [
+        "email",
+        "message"
+      ],
+      "optionalAllowed": [
+        "name",
+        "phone",
+        "subject"
+      ],
+      "requirePrivacyNoticeLink": true
+    }
+  },
+  "manualCheck": null
+}

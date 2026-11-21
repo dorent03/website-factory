@@ -1,0 +1,41 @@
+{
+  "id": "de.ecommerce.vsbg-dispute-info",
+  "title": "Hinweis zur Verbraucherschlichtung (§ 36 VSBG)",
+  "description": "Unternehmer mit Website oder AGB müssen angeben, ob sie zur Teilnahme an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle bereit oder verpflichtet sind; Unternehmer mit ≤ 10 Beschäftigten am 31.12. des Vorjahres sind von Nr. 1 befreit, nicht aber von Nr. 2 (wenn sie teilnehmen wollen oder müssen: Stelle mit Anschrift und Website + Teilnahmeerklärung). Mitarbeiterzahl ist nicht im Profil abgebildet.",
+  "jurisdiction": "DE",
+  "category": "ecommerce",
+  "sources": [
+    {
+      "title": "§ 36 VSBG – Allgemeine Informationspflicht",
+      "url": "https://www.gesetze-im-internet.de/vsbg/__36.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 37 VSBG – Informationen nach Entstehen der Streitigkeit",
+      "url": "https://www.gesetze-im-internet.de/vsbg/__37.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "sellsToConsumers"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "vsbg-statement",
+      "proposedCheck": "ecommerce.vsbg-statement-present"
+    }
+  },
+  "manualCheck": "Beschäftigtenzahl zum 31.12. des Vorjahres und Teilnahmebereitschaft/-pflicht (z. B. Branchenpflicht für Energieversorger) beim Kunden erfragen; Aussage auf der Website bzw. in den AGB prüfen. Hinweis nach § 37 VSBG im Streitfall ist ein Prozessthema."
+}

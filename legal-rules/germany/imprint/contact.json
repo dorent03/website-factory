@@ -1,0 +1,51 @@
+{
+  "id": "de.imprint.contact",
+  "title": "Schnelle elektronische Kontaktaufnahme und unmittelbare Kommunikation",
+  "description": "E-Mail-Adresse ist ausdrücklich Pflicht (§ 5 Abs. 1 Nr. 2 DDG). Daneben muss ein weiterer schneller, unmittelbarer Kommunikationsweg bestehen; eine Telefonnummer ist nach EuGH C-649/17 nicht in jedem Fall zwingend, wird von § 2 Abs. 1 Nr. 2 DL-InfoV für Dienstleistungserbringer aber ausdrücklich genannt und ist der risikoärmste Weg.",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 2 DL-InfoV – Stets zur Verfügung zu stellende Informationen",
+      "url": "https://www.gesetze-im-internet.de/dlinfov/__2.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "EuGH, Urt. v. 10.07.2019, C-649/17 (Amazon EU)",
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-649/17",
+      "publisher": "Gerichtshof der Europäischen Union (curia.europa.eu)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [
+    "email"
+  ],
+  "automatedCheck": {
+    "checkId": "imprint.fields-present",
+    "params": {
+      "fields": [
+        "email"
+      ],
+      "recommendedFields": [
+        "phone"
+      ]
+    }
+  },
+  "manualCheck": "Wenn keine Telefonnummer angegeben wird: prüfen, ob ein gleichwertiger unmittelbarer Kommunikationsweg (z. B. Kontaktformular mit zeitnaher Antwort) vorhanden ist. LAWYER REVIEW, wenn bewusst auf Telefon verzichtet wird."
+}

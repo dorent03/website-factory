@@ -1,0 +1,17 @@
+/* Website Factory consent manager — inherits the site's design tokens when present. */
+.wf-consent { position: fixed; inset: auto 0 0 0; z-index: 2147483000; padding: 16px; display: flex; justify-content: center; pointer-events: none; }
+.wf-consent__box { pointer-events: auto; width: min(640px, 100%); background: var(--surface, #fff); color: var(--text, #1a1a1a); border: 1px solid var(--border, rgba(0,0,0,.12)); border-radius: 14px; padding: 20px; box-shadow: 0 10px 40px rgba(0,0,0,.18); font: inherit; max-height: 80vh; overflow: auto; }
+.wf-consent__box h2 { margin: 0 0 8px; font-size: 1.125rem; }
+.wf-consent__text { margin: 0 0 12px; font-size: .95rem; line-height: 1.5; }
+.wf-consent__row { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-top: 1px solid var(--border, rgba(0,0,0,.1)); font-size: .95rem; }
+.wf-consent__row input { margin-top: 4px; width: 18px; height: 18px; }
+.wf-consent__actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.wf-consent__links { margin: 12px 0 0; font-size: .875rem; }
+.wf-btn { min-height: 44px; padding: 0 16px; border-radius: 10px; border: 1px solid var(--text, #1a1a1a); background: transparent; color: var(--text, #1a1a1a); font: inherit; font-weight: 600; cursor: pointer; flex: 1 1 auto; }
+.wf-btn--primary { background: var(--accent, #1a1a1a); color: var(--accent-contrast, #fff); border-color: var(--accent, #1a1a1a); }
+.wf-btn:focus-visible { outline: 3px solid var(--accent, #1a1a1a); outline-offset: 2px; }
+.wf-embed { position: relative; aspect-ratio: 16 / 9; background: var(--surface, #f2f2f2); border: 1px solid var(--border, rgba(0,0,0,.12)); border-radius: 12px; overflow: hidden; }
+.wf-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.wf-embed__ph { position: absolute; inset: 0; display: grid; place-content: center; gap: 4px; padding: 24px; text-align: center; font-size: .95rem; }
+.wf-embed__ph p { margin: 0 0 8px; max-width: 46ch; }
+@media (prefers-reduced-motion: no-preference) { .wf-consent__box { animation: wf-in .2s ease-out; } @keyframes wf-in { from { opacity: 0; transform: translateY(8px); } } }

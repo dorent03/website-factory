@@ -1,0 +1,50 @@
+{
+  "id": "de.imprint.regulated-profession",
+  "title": "Angaben für reglementierte Berufe",
+  "description": "Bei reglementierten Berufen (z. B. Rechtsanwälte, Steuerberater, Ärzte, Architekten, Ingenieure, Handwerk mit Meisterpflicht): zuständige Kammer, gesetzliche Berufsbezeichnung und Staat der Verleihung, Bezeichnung der berufsrechtlichen Regelungen und wie sie zugänglich sind (z. B. Link) – § 5 Abs. 1 Nr. 5 DDG, § 2 Abs. 1 Nr. 6 DL-InfoV.",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 2 DL-InfoV – Stets zur Verfügung zu stellende Informationen",
+      "url": "https://www.gesetze-im-internet.de/dlinfov/__2.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "isRegulatedProfession"
+    ]
+  },
+  "requiredFields": [
+    "chamber",
+    "professionalTitle",
+    "professionalTitleCountry",
+    "professionalRules"
+  ],
+  "automatedCheck": {
+    "checkId": "imprint.fields-present",
+    "params": {
+      "fields": [
+        "chamber",
+        "professionalTitle",
+        "professionalTitleCountry",
+        "professionalRules"
+      ]
+    }
+  },
+  "manualCheck": "LAWYER REVIEW: Berufsspezifisches Berufsrecht (z. B. BORA, BOStB, Berufsordnungen der Ärztekammern) kann weitere Angaben oder Werbebeschränkungen vorsehen."
+}

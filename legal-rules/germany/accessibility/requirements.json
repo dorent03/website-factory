@@ -1,0 +1,48 @@
+{
+  "id": "de.accessibility.requirements",
+  "title": "Barrierefreiheitsanforderungen nach BFSGV erfüllt",
+  "description": "Ist das BFSG anwendbar, muss die Dienstleistung wahrnehmbar, bedienbar, verständlich und robust sein (§ 3 Abs. 1 BFSG, BFSGV). Technische Referenz in der Praxis: EN 301 549 / WCAG 2.1 Level AA. Automatisierte Tests decken nur einen Teil der Kriterien ab; Ergebnis bleibt PASS/WARNING/FAIL/MANUAL REVIEW.",
+  "jurisdiction": "DE",
+  "category": "accessibility",
+  "sources": [
+    {
+      "title": "§ 3 BFSG – Barrierefreiheit (Kleinstunternehmen-Ausnahme Abs. 3)",
+      "url": "https://www.gesetze-im-internet.de/bfsg/__3.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 14 BFSG – Pflichten des Dienstleistungserbringers",
+      "url": "https://www.gesetze-im-internet.de/bfsg/__14.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "Bundesfachstelle Barrierefreiheit – Das Barrierefreiheitsstärkungsgesetz (BFSG)",
+      "url": "https://www.bundesfachstelle-barrierefreiheit.de/DE/Barrierefreiheitsstaerkungsgesetz/barrierefreiheitsstaerkungsgesetz_node.html",
+      "publisher": "Bundesfachstelle Barrierefreiheit (bei der Deutschen Rentenversicherung Knappschaft-Bahn-See)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "sellsToConsumers"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "accessibility-audit",
+      "referenceStandard": "EN 301 549 / WCAG 2.1 AA",
+      "proposedCheck": "accessibility.automated-audit"
+    }
+  },
+  "manualCheck": "Nur wenn de.accessibility.bfsg-applicability = applies: manuelles Audit (Tastatur, Screenreader, Kontraste, Formulare, Fehlermeldungen) durchführen. Welche harmonisierte Norm aktuell Konformitätsvermutung auslöst, bei der Bundesfachstelle prüfen."
+}

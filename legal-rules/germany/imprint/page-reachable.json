@@ -1,0 +1,44 @@
+{
+  "id": "de.imprint.page-reachable",
+  "title": "Impressum leicht erkennbar, unmittelbar erreichbar, ständig verfügbar",
+  "description": "Die Anbieterkennzeichnung muss von jeder Seite aus leicht erkennbar und unmittelbar erreichbar sein (§ 5 Abs. 1 DDG; für alle nicht rein privaten Telemedien § 18 Abs. 1 MStV). Technische Prüfung: Link mit eindeutiger Bezeichnung (z. B. \"Impressum\") auf jeder Seite, max. zwei Klicks, HTTP 200, nicht nur im Cookie-Banner oder hinter Login.",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 18 Medienstaatsvertrag (MStV) – Informationspflichten und Auskunftsrechte (Text gilt ab 01.12.2025)",
+      "url": "https://www.gesetze-bayern.de/Content/Document/MStV-18",
+      "publisher": "Bayerische Staatskanzlei (BAYERN.RECHT, amtliches Landesrechtsportal)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "imprint.page-reachable",
+    "params": {
+      "linkLabels": [
+        "Impressum",
+        "Anbieterkennzeichnung",
+        "Legal Notice"
+      ],
+      "maxClicks": 2,
+      "mustBeOnEveryPage": true
+    }
+  },
+  "manualCheck": null
+}

@@ -1,0 +1,47 @@
+{
+  "id": "de.imprint.business-letters-gmbh",
+  "title": "Pflichtangaben in E-Mails/Bestellformularen – GmbH/UG",
+  "description": "Rechtsform, Sitz, Registergericht, HR-Nummer, alle Geschäftsführer und ggf. Aufsichtsratsvorsitzender (Familienname + mind. ein ausgeschriebener Vorname) auf allen Geschäftsbriefen einschließlich E-Mails und Bestellscheinen (§ 35a GmbHG).",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 35a GmbHG – Angaben auf Geschäftsbriefen",
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__35a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [
+      "gmbh",
+      "ug"
+    ],
+    "conditions": []
+  },
+  "requiredFields": [
+    "legalName",
+    "legalForm",
+    "city",
+    "registerCourt",
+    "registerNumber",
+    "representatives"
+  ],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "business-letter-footer",
+      "scope": [
+        "emailTemplates",
+        "orderConfirmation"
+      ],
+      "proposedCheck": "email.business-letter-footer"
+    }
+  },
+  "manualCheck": "Generierte E-Mail-Vorlagen auf vollständige Pflichtangaben prüfen."
+}

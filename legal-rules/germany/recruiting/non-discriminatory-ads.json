@@ -1,0 +1,41 @@
+{
+  "id": "de.recruiting.non-discriminatory-ads",
+  "title": "Diskriminierungsfreie Stellenanzeigen",
+  "description": "Stellenanzeigen dürfen nicht gegen das Benachteiligungsverbot verstoßen (§ 11 i. V. m. §§ 1, 7 AGG): geschlechtsneutral (z. B. m/w/d), keine Altersvorgaben (\"junges Team\" riskant), keine Anforderungen wie \"Muttersprache Deutsch\" ohne sachlichen Grund. Verstöße begründen Entschädigungsrisiken (§ 15 AGG).",
+  "jurisdiction": "DE",
+  "category": "recruiting",
+  "sources": [
+    {
+      "title": "§ 11 AGG – Ausschreibung",
+      "url": "https://www.gesetze-im-internet.de/agg/__11.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 15 AGG – Entschädigung und Schadensersatz (Frist Abs. 4)",
+      "url": "https://www.gesetze-im-internet.de/agg/__15.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "hasJobApplications"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "job-ad-wording",
+      "proposedCheck": "recruiting.job-ad-wording"
+    }
+  },
+  "manualCheck": "Stellenanzeigentexte auf AGG-relevante Formulierungen prüfen."
+}

@@ -1,0 +1,34 @@
+{
+  "id": "de.ecommerce.commercial-communication",
+  "title": "Werbung und Aktionen als solche erkennbar",
+  "description": "Kommerzielle Kommunikation muss als solche erkennbar, der Auftraggeber identifizierbar sein; Rabatte, Zugaben und Gewinnspiele mit klaren, leicht zugänglichen Bedingungen (§ 6 Abs. 1 DDG).",
+  "jurisdiction": "DE",
+  "category": "ecommerce",
+  "sources": [
+    {
+      "title": "§ 6 DDG – Besondere Pflichten bei kommerziellen Kommunikationen",
+      "url": "https://www.gesetze-im-internet.de/ddg/__6.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "minor",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "isCommercial"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "commercial-communication"
+    }
+  },
+  "manualCheck": "Bei Aktionen, Gutscheinen, Gewinnspielen und gesponserten Inhalten Kennzeichnung und Teilnahmebedingungen prüfen."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "de.ecommerce.price-indication",
+  "title": "Gesamtpreise und Grundpreise",
+  "description": "Bei Angeboten/Werbung mit Preisen gegenüber Verbrauchern: Gesamtpreis inkl. USt und sonstiger Preisbestandteile (§ 3 PAngV), Grundpreis bei Waren nach Gewicht/Volumen/Länge/Fläche (§ 4 PAngV), Hinweis auf Liefer-/Versandkosten.",
+  "jurisdiction": "DE",
+  "category": "ecommerce",
+  "sources": [
+    {
+      "title": "§ 3 PAngV – Pflicht zur Angabe des Gesamtpreises",
+      "url": "https://www.gesetze-im-internet.de/pangv_2022/__3.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 4 PAngV – Pflicht zur Angabe des Grundpreises",
+      "url": "https://www.gesetze-im-internet.de/pangv_2022/__4.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "sellsToConsumers",
+      "hasShop"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "price-indication"
+    }
+  },
+  "manualCheck": "Preisangaben in Shop, Preislisten und Buchungsstrecken prüfen (auch bei Dienstleistungen mit Preisangaben). Kleinunternehmer nach § 19 UStG: Hinweis zur fehlenden USt prüfen."
+}

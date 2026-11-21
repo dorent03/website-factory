@@ -1,0 +1,35 @@
+{
+  "id": "de.ecommerce.cancellation-button",
+  "title": "Kündigungsbutton für online abschließbare Dauerschuldverhältnisse",
+  "description": "Können Verbraucher auf der Website Abos/Dauerschuldverhältnisse abschließen, ist eine Kündigungsschaltfläche (\"Verträge hier kündigen\") mit Bestätigungsseite bereitzustellen (§ 312k BGB).",
+  "jurisdiction": "DE",
+  "category": "ecommerce",
+  "sources": [
+    {
+      "title": "§ 312k BGB – Kündigung von Verbraucherverträgen im elektronischen Geschäftsverkehr",
+      "url": "https://www.gesetze-im-internet.de/bgb/__312k.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "sellsToConsumers"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "cancellation-button",
+      "proposedCondition": "offersSubscriptions"
+    }
+  },
+  "manualCheck": "Nur relevant, wenn Abonnements/Mitgliedschaften online abgeschlossen werden: Kündigungsbutton und Bestätigungsseite prüfen."
+}

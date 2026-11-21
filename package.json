@@ -1,0 +1,27 @@
+{
+  "name": "website-factory",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local multi-agent website production platform (Claude Code + Codex)",
+  "workspaces": ["packages/*", "apps/*"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "tsx scripts/dev.ts",
+    "start": "tsx scripts/dev.ts --prod",
+    "build": "npm run typecheck && npm -w @wf/web run build",
+    "typecheck": "tsc -p apps/server && tsc -p apps/web",
+    "test": "vitest run",
+    "qa": "tsx apps/server/src/qa/cli.ts",
+    "db:generate": "drizzle-kit generate",
+    "skills:link": "node scripts/link-skills.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "concurrently": "^10.0.6",
+    "drizzle-kit": "^0.31.11",
+    "tsx": "^4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "^5.0.5"
+  }
+}

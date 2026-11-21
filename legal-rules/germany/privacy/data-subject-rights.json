@@ -1,0 +1,37 @@
+{
+  "id": "de.privacy.data-subject-rights",
+  "title": "Betroffenenrechte und Beschwerderecht",
+  "description": "Hinweis auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch (Art. 21 – hervorgehoben bei lit.-f-Verarbeitungen), Widerruf von Einwilligungen und Beschwerderecht bei einer Aufsichtsbehörde (Art. 13 Abs. 2 lit. b–d DSGVO).",
+  "jurisdiction": "EU",
+  "category": "privacy",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "privacy.policy-present",
+    "params": {
+      "requiredSections": [
+        "rights",
+        "objection",
+        "consentWithdrawal",
+        "complaint"
+      ]
+    }
+  },
+  "manualCheck": null
+}

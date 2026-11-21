@@ -1,0 +1,35 @@
+{
+  "id": "de.accessibility.ecommerce-functions",
+  "title": "Barrierefreie Identifizierungs-, Sicherheits- und Zahlungsfunktionen",
+  "description": "Bei E-Commerce-Dienstleistungen müssen Informationen zur Barrierefreiheit der angebotenen Produkte (soweit vom Wirtschaftsakteur bereitgestellt) angezeigt sowie Identifizierungs-, Authentifizierungs-, Sicherheits- und Zahlungsfunktionen barrierefrei sein (§ 19 BFSGV).",
+  "jurisdiction": "DE",
+  "category": "accessibility",
+  "sources": [
+    {
+      "title": "§ 19 BFSGV – Zusätzliche Anforderungen an Dienstleistungen im elektronischen Geschäftsverkehr",
+      "url": "https://www.gesetze-im-internet.de/bfsgv/__19.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "sellsToConsumers",
+      "hasShop"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "accessible-checkout"
+    }
+  },
+  "manualCheck": "Checkout, Login, CAPTCHA-Alternativen und Zahlungsdienst-Einbindung auf Barrierefreiheit prüfen (nur wenn BFSG anwendbar)."
+}

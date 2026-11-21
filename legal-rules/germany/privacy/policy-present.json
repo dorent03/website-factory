@@ -1,0 +1,44 @@
+{
+  "id": "de.privacy.policy-present",
+  "title": "Datenschutzerklärung vorhanden und erreichbar",
+  "description": "Informationen nach Art. 13 DSGVO müssen zum Zeitpunkt der Erhebung in präziser, transparenter, leicht zugänglicher Form vorliegen (Art. 12 Abs. 1 DSGVO): eigene Seite, von jeder Seite verlinkt, nicht nur hinter dem Consent-Banner.",
+  "jurisdiction": "EU",
+  "category": "privacy",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+      "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+      "publisher": "Datenschutzkonferenz (DSK)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "privacy.policy-present",
+    "params": {
+      "linkLabels": [
+        "Datenschutz",
+        "Datenschutzerklärung",
+        "Privacy"
+      ],
+      "mustBeOnEveryPage": true,
+      "maxClicks": 2
+    }
+  },
+  "manualCheck": null
+}

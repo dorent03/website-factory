@@ -1,0 +1,34 @@
+{
+  "id": "de.ecommerce.product-safety-info",
+  "title": "Produktsicherheitsangaben im Online-Angebot (GPSR)",
+  "description": "Seit 13.12.2024 müssen Online-Angebote von Produkten Hersteller (Name, Post- und E-Mail-Adresse), ggf. verantwortliche Person in der EU, Produktidentifikation (inkl. Bild/Typ) und Warn- bzw. Sicherheitshinweise eindeutig und gut sichtbar enthalten (Art. 19 VO (EU) 2023/988).",
+  "jurisdiction": "EU",
+  "category": "ecommerce",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2023/988 über die allgemeine Produktsicherheit (GPSR), Art. 19",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/988/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "hasShop"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "gpsr-product-info"
+    }
+  },
+  "manualCheck": "Produktdetailseiten auf GPSR-Angaben prüfen. Produktdaten nie erfinden – fehlen Herstellerangaben, Produkt nicht freigeben."
+}

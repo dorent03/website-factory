@@ -1,0 +1,46 @@
+{
+  "id": "de.imprint.register-entry",
+  "title": "Registergericht und Registernummer",
+  "description": "Bei Eintragung in Handels-, Vereins-, Partnerschafts-, Genossenschafts- oder Gesellschaftsregister sind Register und Registernummer anzugeben (§ 5 Abs. 1 Nr. 4 DDG; § 2 Abs. 1 Nr. 3 DL-InfoV).",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 2 DL-InfoV – Stets zur Verfügung zu stellende Informationen",
+      "url": "https://www.gesetze-im-internet.de/dlinfov/__2.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "hasRegisterEntry"
+    ]
+  },
+  "requiredFields": [
+    "registerCourt",
+    "registerNumber"
+  ],
+  "automatedCheck": {
+    "checkId": "imprint.fields-present",
+    "params": {
+      "fields": [
+        "registerCourt",
+        "registerNumber"
+      ]
+    }
+  },
+  "manualCheck": null
+}

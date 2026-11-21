@@ -1,0 +1,48 @@
+{
+  "id": "de.imprint.representatives-legal-persons",
+  "title": "Vertretungsberechtigte bei juristischen Personen",
+  "description": "GmbH/UG: alle Geschäftsführer; AG: Vorstand; e.V.: vertretungsberechtigter Vorstand. Pflicht nach § 5 Abs. 1 Nr. 1 DDG und § 18 Abs. 1 Nr. 2 MStV (dort mit Name und Anschrift).",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 18 Medienstaatsvertrag (MStV) – Informationspflichten und Auskunftsrechte (Text gilt ab 01.12.2025)",
+      "url": "https://www.gesetze-bayern.de/Content/Document/MStV-18",
+      "publisher": "Bayerische Staatskanzlei (BAYERN.RECHT, amtliches Landesrechtsportal)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [
+      "gmbh",
+      "ug",
+      "ag",
+      "ev"
+    ],
+    "conditions": []
+  },
+  "requiredFields": [
+    "representatives"
+  ],
+  "automatedCheck": {
+    "checkId": "imprint.fields-present",
+    "params": {
+      "fields": [
+        "representatives"
+      ],
+      "minItems": 1
+    }
+  },
+  "manualCheck": null
+}

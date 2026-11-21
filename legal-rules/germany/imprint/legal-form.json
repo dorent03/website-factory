@@ -1,0 +1,66 @@
+{
+  "id": "de.imprint.legal-form",
+  "title": "Rechtsform des Anbieters",
+  "description": "Bei juristischen Personen ist die Rechtsform anzugeben (§ 5 Abs. 1 Nr. 1 DDG); für Personengesellschaften und Kaufleute ergibt sich der Rechtsformzusatz aus dem Firmenrecht (§ 19 HGB, § 707a BGB) und § 2 Abs. 1 Nr. 1 DL-InfoV. Der im Impressum genannte Rechtsformzusatz muss zum Profil passen.",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 2 DL-InfoV – Stets zur Verfügung zu stellende Informationen",
+      "url": "https://www.gesetze-im-internet.de/dlinfov/__2.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 37a HGB – Angaben auf Geschäftsbriefen des Kaufmanns",
+      "url": "https://www.gesetze-im-internet.de/hgb/__37a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 707a BGB – Eintragung im Gesellschaftsregister (eGbR)",
+      "url": "https://www.gesetze-im-internet.de/bgb/__707a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [
+      "ek",
+      "gbr",
+      "egbr",
+      "ohg",
+      "kg",
+      "gmbh",
+      "ug",
+      "ag",
+      "ev"
+    ],
+    "conditions": []
+  },
+  "requiredFields": [
+    "legalForm",
+    "legalName"
+  ],
+  "automatedCheck": {
+    "checkId": "imprint.fields-present",
+    "params": {
+      "fields": [
+        "legalForm",
+        "legalName"
+      ]
+    }
+  },
+  "manualCheck": null
+}

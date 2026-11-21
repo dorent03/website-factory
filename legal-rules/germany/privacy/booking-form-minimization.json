@@ -1,0 +1,36 @@
+{
+  "id": "de.privacy.booking-form-minimization",
+  "title": "Buchungsformular: Datenminimierung",
+  "description": "Buchungs-/Terminformulare dürfen nur die zur Durchführung erforderlichen Daten verpflichtend abfragen; Gesundheits- oder sonstige besondere Kategorien (Art. 9 DSGVO) nur mit eigener Rechtsgrundlage.",
+  "jurisdiction": "DE",
+  "category": "privacy",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "hasBooking"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "forms.data-minimization",
+    "params": {
+      "form": "booking",
+      "forbidSpecialCategoriesByDefault": true,
+      "requirePrivacyNoticeLink": true
+    }
+  },
+  "manualCheck": "LAWYER REVIEW: Bei Arzt-/Therapie-/Beratungsbuchungen mit Gesundheitsdaten Rechtsgrundlage nach Art. 9 Abs. 2 DSGVO und Auftragsverarbeitung des Buchungsdienstes prüfen."
+}

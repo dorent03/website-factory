@@ -1,0 +1,48 @@
+{
+  "id": "de.consent.reject-works",
+  "title": "Ablehnen gleichwertig und wirksam",
+  "description": "Auf der ersten Ebene des Banners muss eine Ablehnungsmöglichkeit bestehen, die gleich einfach erreichbar ist wie \"Alle akzeptieren\" (DSK-OH Digitale Dienste); nach Ablehnung dürfen keine einwilligungsbedürftigen Zugriffe erfolgen. Schließen-X ohne Ablehnungswirkung, Farbtricks oder Mehrklick-Ablehnung sind unzulässig.",
+  "jurisdiction": "DE",
+  "category": "consent",
+  "sources": [
+    {
+      "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+      "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+      "publisher": "Datenschutzkonferenz (DSK)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 25 TDDDG – Schutz der Privatsphäre bei Endeinrichtungen",
+      "url": "https://www.gesetze-im-internet.de/ttdsg/__25.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "usesNonEssentialStorage"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "consent.reject-works",
+    "params": {
+      "requireRejectOnFirstLayer": true,
+      "maxClicksToReject": 1,
+      "verifyNoStorageAfterReject": true
+    }
+  },
+  "manualCheck": null
+}

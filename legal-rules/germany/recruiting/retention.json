@@ -1,0 +1,46 @@
+{
+  "id": "de.recruiting.retention",
+  "title": "Löschung von Bewerberdaten",
+  "description": "Nach Abschluss des Verfahrens sind Daten abgelehnter Bewerber zu löschen, sobald sie nicht mehr erforderlich sind (Art. 5 Abs. 1 lit. e, Art. 17 DSGVO). Wegen der AGG-Fristen (2 Monate Geltendmachung, § 15 Abs. 4 AGG; 3 Monate Klagefrist, § 61b ArbGG) wird in der Praxis eine Aufbewahrung von bis zu ca. 6 Monaten nach Absage als vertretbar angesehen.",
+  "jurisdiction": "DE",
+  "category": "recruiting",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 15 AGG – Entschädigung und Schadensersatz (Frist Abs. 4)",
+      "url": "https://www.gesetze-im-internet.de/agg/__15.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 61b ArbGG – Klage wegen Benachteiligung",
+      "url": "https://www.gesetze-im-internet.de/arbgg/__61b.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "hasJobApplications"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "applicant-retention"
+    }
+  },
+  "manualCheck": "LAWYER REVIEW: Konkrete Löschfrist festlegen und in der Datenschutzinformation angeben; die 6-Monats-Praxis ist keine gesetzliche Frist."
+}

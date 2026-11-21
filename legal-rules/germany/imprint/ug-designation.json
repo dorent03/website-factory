@@ -1,0 +1,40 @@
+{
+  "id": "de.imprint.ug-designation",
+  "title": "Firmenzusatz \"UG (haftungsbeschränkt)\"",
+  "description": "Eine Unternehmergesellschaft muss in der Firma \"Unternehmergesellschaft (haftungsbeschränkt)\" oder \"UG (haftungsbeschränkt)\" führen (§ 5a Abs. 1 GmbHG); Kurzformen wie \"UG\" ohne Klammerzusatz oder \"GmbH\" sind unzulässig. Muss überall auf der Website identisch geführt werden.",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 5a GmbHG – Unternehmergesellschaft",
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__5a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [
+      "ug"
+    ],
+    "conditions": []
+  },
+  "requiredFields": [
+    "legalName"
+  ],
+  "automatedCheck": {
+    "checkId": "company.consistency",
+    "params": {
+      "legalForm": "ug",
+      "requiredNamePattern": "(Unternehmergesellschaft|UG) \\(haftungsbeschränkt\\)",
+      "forbiddenPatterns": [
+        "\\bGmbH\\b"
+      ]
+    }
+  },
+  "manualCheck": null
+}

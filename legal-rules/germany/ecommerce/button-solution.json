@@ -1,0 +1,36 @@
+{
+  "id": "de.ecommerce.button-solution",
+  "title": "Bestell-Button \"zahlungspflichtig bestellen\"",
+  "description": "Der Bestellbutton muss mit \"zahlungspflichtig bestellen\" oder einer entsprechenden eindeutigen Formulierung beschriftet sein; unmittelbar davor sind die wesentlichen Informationen (Merkmale, Gesamtpreis, Laufzeit etc.) hervorgehoben darzustellen. Sonst kommt kein Vertrag zustande (§ 312j Abs. 2–4 BGB).",
+  "jurisdiction": "DE",
+  "category": "ecommerce",
+  "sources": [
+    {
+      "title": "§ 312j BGB – Besondere Pflichten im elektronischen Geschäftsverkehr gegenüber Verbrauchern",
+      "url": "https://www.gesetze-im-internet.de/bgb/__312j.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "sellsToConsumers",
+      "hasShop"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "order-button",
+      "proposedCheck": "ecommerce.order-button-label"
+    }
+  },
+  "manualCheck": "Beschriftung des finalen Bestellbuttons und Übersichtsseite prüfen."
+}

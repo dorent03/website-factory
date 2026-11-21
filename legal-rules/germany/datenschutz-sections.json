@@ -1,0 +1,684 @@
+{
+  "jurisdiction": "DE",
+  "lastReviewed": "2026-11-02",
+  "purpose": "Catalog of privacy-policy sections keyed by service category. Lists required TOPICS only – no finished legal prose. Used by privacy.services-documented to verify that every detected service has a section covering every required topic.",
+  "topicDefinitions": {
+    "controller": "Name and contact details of the controller (Art. 13(1)(a) GDPR); for embeds also any joint controllership (Art. 26).",
+    "purpose": "Purpose(s) of processing (Art. 13(1)(c)).",
+    "legalBasis": "Legal basis per purpose (Art. 13(1)(c), Art. 6(1)); plus § 25 TDDDG basis for device access where relevant.",
+    "recipients": "Recipients or categories of recipients incl. processors (Art. 13(1)(e)).",
+    "thirdCountryTransfer": "Transfer to third countries and the mechanism (adequacy/DPF, SCC, Art. 49) (Art. 13(1)(f)).",
+    "retention": "Storage period or criteria (Art. 13(2)(a)).",
+    "rights": "Data-subject rights, right to withdraw consent, right to object, right to complain (Art. 13(2)(b)-(d))."
+  },
+  "disclaimer": "Topic lists are a technical completeness checklist, not legal advice; sections marked lawyerReview need review by a qualified lawyer before release.",
+  "sections": [
+    {
+      "key": "hosting",
+      "title": "Hosting und Server-Logfiles",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights",
+        "dataCategories",
+        "processorAgreement"
+      ],
+      "topicHints": {
+        "purpose": "Auslieferung der Website, Stabilität, Abwehr von Angriffen",
+        "recipients": "Hoster als Auftragsverarbeiter (Name, Sitz)",
+        "thirdCountryTransfer": "Serverstandort; bei Nicht-EU-Hoster Transfermechanismus",
+        "retention": "Logfile-Speicherdauer bzw. Löschkriterium",
+        "dataCategories": "IP-Adresse, Datum/Uhrzeit, URL, Referrer, User-Agent, Statuscode"
+      },
+      "typicalLegalBasis": [
+        "Art. 6 Abs. 1 lit. f DSGVO (Bereitstellung, Sicherheit)"
+      ],
+      "consentRequiredUnderTDDDG25": "no",
+      "notes": "Kein Einwilligungsbedarf für technisch notwendige Logs; AV-Vertrag mit Hoster.",
+      "lawyerReview": null,
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 25 TDDDG – Schutz der Privatsphäre bei Endeinrichtungen",
+          "url": "https://www.gesetze-im-internet.de/ttdsg/__25.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+          "publisher": "Datenschutzkonferenz (DSK)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "key": "contact-form",
+      "title": "Kontaktformular",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights",
+        "dataCategories"
+      ],
+      "topicHints": {
+        "purpose": "Bearbeitung der Anfrage",
+        "recipients": "Formular-/Mail-Dienstleister, Hoster",
+        "retention": "Löschung nach abschließender Bearbeitung, gesetzliche Aufbewahrungspflichten (z. B. Handels-/Steuerrecht) gesondert",
+        "dataCategories": "Pflicht- und freiwillige Felder getrennt benennen"
+      },
+      "typicalLegalBasis": [
+        "Art. 6 Abs. 1 lit. b DSGVO (Anfrage zu Vertrag)",
+        "Art. 6 Abs. 1 lit. f DSGVO (sonstige Anfragen)"
+      ],
+      "consentRequiredUnderTDDDG25": "no",
+      "notes": "Keine Einwilligungs-Checkbox als Pflicht, wenn lit. b/f die Grundlage ist; Hinweis auf DSE am Formular.",
+      "lawyerReview": null,
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+          "publisher": "Datenschutzkonferenz (DSK)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "key": "email",
+      "title": "Kontakt per E-Mail",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights"
+      ],
+      "topicHints": {
+        "purpose": "Bearbeitung der Anfrage",
+        "recipients": "E-Mail-Provider (Auftragsverarbeiter)",
+        "thirdCountryTransfer": "Sitz/Serverstandort des Mail-Providers",
+        "retention": "wie Kontaktformular; Aufbewahrung von Handels-/Geschäftsbriefen gesondert"
+      },
+      "typicalLegalBasis": [
+        "Art. 6 Abs. 1 lit. b DSGVO",
+        "Art. 6 Abs. 1 lit. f DSGVO"
+      ],
+      "consentRequiredUnderTDDDG25": "no",
+      "notes": "Bei sensiblen Inhalten auf Unverschlüsselung der E-Mail hinweisen bzw. sicheren Kanal anbieten.",
+      "lawyerReview": null,
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "key": "fonts-self-hosted",
+      "title": "Lokal eingebundene Schriftarten",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights"
+      ],
+      "topicHints": {
+        "recipients": "keine Dritten (Auslieferung vom eigenen Server)",
+        "thirdCountryTransfer": "keine"
+      },
+      "typicalLegalBasis": [
+        "kein externer Datentransfer – nur Hinweis, dass Schriften lokal ausgeliefert werden"
+      ],
+      "consentRequiredUnderTDDDG25": "no",
+      "notes": "Wenn alle Fonts lokal liegen, genügt ein kurzer Hinweis; Fonts von Dritt-CDNs gehören NICHT in diesen Abschnitt und lösen de.privacy.fonts-local aus.",
+      "lawyerReview": null,
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+          "publisher": "Datenschutzkonferenz (DSK)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "key": "youtube",
+      "title": "YouTube-Videos (Google Ireland Ltd./Google LLC)",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights",
+        "consentMechanism",
+        "jointControllership"
+      ],
+      "topicHints": {
+        "controller": "ggf. gemeinsame Verantwortlichkeit beim Einbinden (EuGH C-40/17)",
+        "recipients": "Google Ireland Ltd., Google LLC",
+        "thirdCountryTransfer": "USA – DPF-Zertifizierung prüfen; Status C-703/25 P",
+        "retention": "Cookie-Laufzeiten laut Anbieter; Einwilligungsprotokoll",
+        "consentMechanism": "Zwei-Klick/Platzhalter oder CMP; youtube-nocookie.com ersetzt die Einwilligung nicht automatisch"
+      },
+      "typicalLegalBasis": [
+        "Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 Abs. 1 TDDDG (Einwilligung)"
+      ],
+      "consentRequiredUnderTDDDG25": "yes",
+      "notes": "Erst nach Einwilligung laden.",
+      "lawyerReview": "Rolle (gemeinsame Verantwortlichkeit nach Art. 26 DSGVO) und Formulierung prüfen.",
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 25 TDDDG – Schutz der Privatsphäre bei Endeinrichtungen",
+          "url": "https://www.gesetze-im-internet.de/ttdsg/__25.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+          "publisher": "Datenschutzkonferenz (DSK)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "Durchführungsbeschluss (EU) 2023/1795 – Angemessenheit EU-US Data Privacy Framework",
+          "url": "https://eur-lex.europa.eu/eli/dec_impl/2023/1795/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "EuGH, Urt. v. 29.07.2019, C-40/17 (Fashion ID)",
+          "url": "https://curia.europa.eu/juris/liste.jsf?num=C-40/17",
+          "publisher": "Gerichtshof der Europäischen Union (curia.europa.eu)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "key": "vimeo",
+      "title": "Vimeo-Videos (Vimeo.com Inc.)",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights",
+        "consentMechanism"
+      ],
+      "topicHints": {
+        "recipients": "Vimeo.com Inc. (USA), ggf. eingebundene Analysedienste",
+        "thirdCountryTransfer": "USA – DPF-Zertifizierung bzw. SCC prüfen",
+        "consentMechanism": "Zwei-Klick/Platzhalter oder CMP; Parameter dnt=1 ersetzt Einwilligung nicht automatisch"
+      },
+      "typicalLegalBasis": [
+        "Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 Abs. 1 TDDDG (Einwilligung)"
+      ],
+      "consentRequiredUnderTDDDG25": "yes",
+      "notes": "Erst nach Einwilligung laden.",
+      "lawyerReview": null,
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 25 TDDDG – Schutz der Privatsphäre bei Endeinrichtungen",
+          "url": "https://www.gesetze-im-internet.de/ttdsg/__25.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+          "publisher": "Datenschutzkonferenz (DSK)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "Durchführungsbeschluss (EU) 2023/1795 – Angemessenheit EU-US Data Privacy Framework",
+          "url": "https://eur-lex.europa.eu/eli/dec_impl/2023/1795/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "key": "google-maps",
+      "title": "Google Maps",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights",
+        "consentMechanism"
+      ],
+      "topicHints": {
+        "recipients": "Google Ireland Ltd., Google LLC",
+        "thirdCountryTransfer": "USA – DPF-Zertifizierung prüfen",
+        "consentMechanism": "Platzhalter mit Einwilligung oder statisches Bild mit Link zu Google Maps"
+      },
+      "typicalLegalBasis": [
+        "Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 Abs. 1 TDDDG (Einwilligung)"
+      ],
+      "consentRequiredUnderTDDDG25": "yes",
+      "notes": "Datensparsame Alternative: statisches Kartenbild/Link oder selbst gehostete OpenStreetMap-Kacheln.",
+      "lawyerReview": null,
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 25 TDDDG – Schutz der Privatsphäre bei Endeinrichtungen",
+          "url": "https://www.gesetze-im-internet.de/ttdsg/__25.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+          "publisher": "Datenschutzkonferenz (DSK)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "Durchführungsbeschluss (EU) 2023/1795 – Angemessenheit EU-US Data Privacy Framework",
+          "url": "https://eur-lex.europa.eu/eli/dec_impl/2023/1795/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "key": "openstreetmap",
+      "title": "OpenStreetMap",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights",
+        "consentMechanism"
+      ],
+      "topicHints": {
+        "recipients": "OpenStreetMap Foundation (Vereinigtes Königreich) bzw. gewählter Tile-Server",
+        "thirdCountryTransfer": "Vereinigtes Königreich – Angemessenheitsbeschluss der Kommission (Gültigkeit bei Review prüfen)"
+      },
+      "typicalLegalBasis": [
+        "selbst gehostete Kacheln: kein Drittanbieter",
+        "Kacheln von tile.openstreetmap.org: Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 TDDDG bzw. Einzelfallprüfung"
+      ],
+      "consentRequiredUnderTDDDG25": "depends",
+      "notes": "Direkte Einbindung der OSM-Tile-Server überträgt IP-Adressen an Dritte; selbst gehostete Kacheln oder statische Karte bevorzugen.",
+      "lawyerReview": "Ob für Drittanbieter-Kacheln Einwilligung nötig ist oder lit. f genügt, ist einzelfallabhängig.",
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 25 TDDDG – Schutz der Privatsphäre bei Endeinrichtungen",
+          "url": "https://www.gesetze-im-internet.de/ttdsg/__25.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+          "publisher": "Datenschutzkonferenz (DSK)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "key": "analytics",
+      "title": "Webanalyse / Reichweitenmessung",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights",
+        "dataCategories",
+        "consentMechanism"
+      ],
+      "topicHints": {
+        "recipients": "Analyse-Anbieter (Name, Sitz) bzw. selbst gehostet",
+        "thirdCountryTransfer": "je Anbieter",
+        "retention": "Speicherdauer der Analysedaten und Cookie-Laufzeiten",
+        "dataCategories": "IP (gekürzt?), Geräte-/Nutzungsdaten, Cookie-IDs",
+        "consentMechanism": "über CMP, granular"
+      },
+      "typicalLegalBasis": [
+        "Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 Abs. 1 TDDDG (Regelfall)",
+        "Einwilligungsfreiheit nur in eng begrenzten Ausnahmefällen nach DSK-OH"
+      ],
+      "consentRequiredUnderTDDDG25": "yes",
+      "notes": "Kein Laden vor Einwilligung; Opt-out-Hinweis genügt nicht.",
+      "lawyerReview": "Einwilligungsfreie Reichweitenmessung nur nach Einzelfallprüfung gegen DSK-OH.",
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 25 TDDDG – Schutz der Privatsphäre bei Endeinrichtungen",
+          "url": "https://www.gesetze-im-internet.de/ttdsg/__25.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+          "publisher": "Datenschutzkonferenz (DSK)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "key": "newsletter",
+      "title": "Newsletter",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights",
+        "dataCategories",
+        "withdrawal"
+      ],
+      "topicHints": {
+        "recipients": "Versanddienstleister (Auftragsverarbeiter)",
+        "thirdCountryTransfer": "Sitz des Versanddienstleisters",
+        "retention": "bis Abmeldung; Protokolldaten des Opt-ins zum Nachweis",
+        "dataCategories": "E-Mail (Pflicht), freiwillige Angaben, Öffnungs-/Klick-Tracking",
+        "withdrawal": "Abmeldelink in jeder Mail"
+      },
+      "typicalLegalBasis": [
+        "Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, Double-Opt-in)",
+        "§ 7 Abs. 3 UWG + Art. 6 Abs. 1 lit. f DSGVO (Bestandskunden)"
+      ],
+      "consentRequiredUnderTDDDG25": "depends",
+      "notes": "Öffnungs- und Klick-Tracking gesondert erwähnen; ggf. eigene Einwilligung.",
+      "lawyerReview": "Tracking im Newsletter (Zählpixel) und Bestandskundenausnahme prüfen.",
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 7 UWG – Unzumutbare Belästigungen",
+          "url": "https://www.gesetze-im-internet.de/uwg_2004/__7.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "key": "consent-tool",
+      "title": "Consent-Management-Tool",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights",
+        "dataCategories"
+      ],
+      "topicHints": {
+        "recipients": "CMP-Anbieter (Auftragsverarbeiter) bzw. selbst gehostet",
+        "thirdCountryTransfer": "Sitz/Server des CMP-Anbieters",
+        "retention": "Speicherdauer der Consent-Entscheidung und Protokolle",
+        "dataCategories": "Consent-ID, Zeitpunkt, Bannerversion, gewählte Zwecke"
+      },
+      "typicalLegalBasis": [
+        "Art. 6 Abs. 1 lit. c DSGVO i. V. m. Art. 7 Abs. 1 DSGVO (Nachweis der Einwilligung)"
+      ],
+      "consentRequiredUnderTDDDG25": "no",
+      "notes": "Speichern der Consent-Entscheidung selbst gilt als unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG).",
+      "lawyerReview": null,
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 25 TDDDG – Schutz der Privatsphäre bei Endeinrichtungen",
+          "url": "https://www.gesetze-im-internet.de/ttdsg/__25.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+          "publisher": "Datenschutzkonferenz (DSK)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "Einwilligungsverwaltungsverordnung (EinwV)",
+          "url": "https://www.gesetze-im-internet.de/einwv/__1.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "key": "captcha",
+      "title": "Spam-Schutz / CAPTCHA",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights",
+        "dataCategories",
+        "consentMechanism"
+      ],
+      "topicHints": {
+        "recipients": "CAPTCHA-Anbieter (Name, Sitz) bzw. keiner bei Honeypot/selbst gehostet",
+        "thirdCountryTransfer": "je Anbieter (z. B. USA)",
+        "dataCategories": "IP, Geräte-/Browsermerkmale, Interaktionsdaten",
+        "consentMechanism": "falls einwilligungsbedürftig: Formular muss ohne Einwilligung barrierefrei nutzbar bleiben oder Alternative anbieten"
+      },
+      "typicalLegalBasis": [
+        "selbst gehostet ohne Endgerätezugriff: Art. 6 Abs. 1 lit. f DSGVO",
+        "Dritt-CAPTCHA mit Endgerätezugriff/Fingerprinting (z. B. reCAPTCHA): Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 Abs. 1 TDDDG"
+      ],
+      "consentRequiredUnderTDDDG25": "depends",
+      "notes": "Datensparsame Alternative: Honeypot/Zeitprüfung serverseitig. Ein CAPTCHA ohne Alternative kann zudem gegen BFSG-Anforderungen verstoßen.",
+      "lawyerReview": "Einwilligungsbedarf eines konkreten CAPTCHA-Dienstes gegen DSK-OH prüfen.",
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 25 TDDDG – Schutz der Privatsphäre bei Endeinrichtungen",
+          "url": "https://www.gesetze-im-internet.de/ttdsg/__25.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+          "publisher": "Datenschutzkonferenz (DSK)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 19 BFSGV – Zusätzliche Anforderungen an Dienstleistungen im elektronischen Geschäftsverkehr",
+          "url": "https://www.gesetze-im-internet.de/bfsgv/__19.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "key": "form-service",
+      "title": "Externer Formular-/Terminbuchungsdienst",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights",
+        "dataCategories",
+        "processorAgreement"
+      ],
+      "topicHints": {
+        "recipients": "Formular-/Buchungsdienst als Auftragsverarbeiter",
+        "thirdCountryTransfer": "Sitz/Server des Dienstes",
+        "retention": "Löschkonzept im Dienst",
+        "dataCategories": "Formularfelder; bei Buchungen ggf. besondere Kategorien (Art. 9)"
+      },
+      "typicalLegalBasis": [
+        "Art. 6 Abs. 1 lit. b DSGVO (Anfrage/Buchung)",
+        "Art. 6 Abs. 1 lit. f DSGVO",
+        "§ 25 TDDDG, falls Skripte/Cookies des Dienstes Endgerätezugriff ohne Notwendigkeit auslösen"
+      ],
+      "consentRequiredUnderTDDDG25": "depends",
+      "notes": "Eingebettete Fremd-Widgets laden oft Tracking – Netzwerkanalyse durchführen.",
+      "lawyerReview": "AV-Vertrag und ggf. Art.-9-Daten prüfen.",
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 25 TDDDG – Schutz der Privatsphäre bei Endeinrichtungen",
+          "url": "https://www.gesetze-im-internet.de/ttdsg/__25.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+          "publisher": "Datenschutzkonferenz (DSK)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "key": "job-applications",
+      "title": "Bewerbungen (Online-Formular oder E-Mail)",
+      "requiredTopics": [
+        "controller",
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention",
+        "rights",
+        "specialCategories"
+      ],
+      "topicHints": {
+        "recipients": "Personalverantwortliche, Bewerbermanagement-Dienstleister",
+        "retention": "Löschfrist nach Absage (AGG-Fristen § 15 Abs. 4 AGG, § 61b ArbGG)",
+        "specialCategories": "Art. 9 DSGVO nur, wenn freiwillig übermittelt bzw. erforderlich"
+      },
+      "typicalLegalBasis": [
+        "Art. 6 Abs. 1 lit. b DSGVO (Anbahnung Beschäftigungsverhältnis)",
+        "§ 26 BDSG (Tauglichkeit nach EuGH C-34/21 zweifelhaft)",
+        "Talentpool: Art. 6 Abs. 1 lit. a DSGVO"
+      ],
+      "consentRequiredUnderTDDDG25": "no",
+      "notes": "Nicht in der Aufgabenliste der Factory angefordert, aber für hasJobApplications erforderlich.",
+      "lawyerReview": "Rechtsgrundlage und Löschfrist prüfen.",
+      "sources": [
+        {
+          "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+          "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 26 BDSG – Datenverarbeitung für Zwecke des Beschäftigungsverhältnisses",
+          "url": "https://www.gesetze-im-internet.de/bdsg_2018/__26.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 15 AGG – Entschädigung und Schadensersatz (Frist Abs. 4)",
+          "url": "https://www.gesetze-im-internet.de/agg/__15.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        },
+        {
+          "title": "§ 61b ArbGG – Klage wegen Benachteiligung",
+          "url": "https://www.gesetze-im-internet.de/arbgg/__61b.html",
+          "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+          "retrieved": "2026-11-02"
+        }
+      ]
+    }
+  ]
+}

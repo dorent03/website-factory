@@ -1,0 +1,45 @@
+{
+  "id": "de.privacy.services-documented",
+  "title": "Jede Verarbeitung/jeder Dienst dokumentiert",
+  "description": "Für jeden auf der Website eingesetzten Dienst (Hosting, Formulare, Schriften, Einbettungen, Analyse, Newsletter, Consent-Tool) müssen die Pflichtthemen nach Art. 13 DSGVO abgedeckt sein: Zweck, Rechtsgrundlage, Empfänger, Drittlandübermittlung, Speicherdauer, Betroffenenrechte. Katalog: germany/datenschutz-sections.json.",
+  "jurisdiction": "EU",
+  "category": "privacy",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+      "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+      "publisher": "Datenschutzkonferenz (DSK)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "privacy.services-documented",
+    "params": {
+      "sectionCatalog": "germany/datenschutz-sections.json",
+      "requiredTopics": [
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "thirdCountryTransfer",
+        "retention"
+      ]
+    }
+  },
+  "manualCheck": null
+}

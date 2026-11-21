@@ -1,0 +1,47 @@
+{
+  "id": "de.recruiting.applicant-privacy-notice",
+  "title": "Datenschutzinformation für Bewerber",
+  "description": "Bewerber sind bei Erhebung nach Art. 13 DSGVO zu informieren: Zweck, Rechtsgrundlage, Empfänger (z. B. Bewerbermanagement-Software), Speicherdauer, Talentpool nur mit Einwilligung. Eigener Abschnitt in der Datenschutzerklärung oder separates Dokument am Bewerbungsformular.",
+  "jurisdiction": "DE",
+  "category": "recruiting",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 26 BDSG – Datenverarbeitung für Zwecke des Beschäftigungsverhältnisses",
+      "url": "https://www.gesetze-im-internet.de/bdsg_2018/__26.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "hasJobApplications"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "privacy.services-documented",
+    "params": {
+      "serviceCategory": "job-applications",
+      "requiredTopics": [
+        "purpose",
+        "legalBasis",
+        "recipients",
+        "retention",
+        "rights"
+      ]
+    }
+  },
+  "manualCheck": null
+}

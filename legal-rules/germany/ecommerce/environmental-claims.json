@@ -1,0 +1,44 @@
+{
+  "id": "de.ecommerce.environmental-claims",
+  "title": "Umwelt- und Nachhaltigkeitsaussagen",
+  "description": "Allgemeine Umweltaussagen (z. B. \"klimaneutral\", \"umweltfreundlich\", \"nachhaltig\") ohne nachweisbare anerkannte hervorragende Umweltleistung, Aussagen über das ganze Produkt/Unternehmen, die nur einen Teil betreffen, und eigene Nachhaltigkeitssiegel ohne Zertifizierungssystem sind stets unzulässig (Anhang Nr. 2a, 4a, 4b UWG, Umsetzung der RL (EU) 2024/825). Solche Claims dürfen nicht generiert werden.",
+  "jurisdiction": "DE",
+  "category": "ecommerce",
+  "sources": [
+    {
+      "title": "Anhang zu § 3 Abs. 3 UWG – stets unzulässige geschäftliche Handlungen (Nr. 2a, 4a, 4b, 23b, 23c)",
+      "url": "https://www.gesetze-im-internet.de/uwg_2004/anhang.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "isCommercial"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "environmental-claims",
+      "flagTerms": [
+        "klimaneutral",
+        "CO2-neutral",
+        "umweltfreundlich",
+        "nachhaltig",
+        "grün",
+        "ökologisch",
+        "biologisch abbaubar"
+      ],
+      "proposedCheck": "content.claims-substantiated"
+    }
+  },
+  "manualCheck": "LAWYER REVIEW: Jede Umwelt-/Nachhaltigkeitsaussage und jedes Siegel mit Nachweis prüfen; Geltungsbeginn der neuen Anhang-Nummern gegen das Änderungsgesetz verifizieren."
+}

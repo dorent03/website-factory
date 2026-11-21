@@ -1,0 +1,34 @@
+{
+  "id": "de.consent.pims-information",
+  "title": "Hinweis: anerkannte Dienste zur Einwilligungsverwaltung (EinwV)",
+  "description": "Seit der EinwV können anerkannte Einwilligungsverwaltungsdienste (PIMS) eingebunden werden; das ist freiwillig. Der Website-Betreiber bleibt für Information und wirksame Einwilligung verantwortlich (§ 1 Abs. 2 EinwV). Nur informativ.",
+  "jurisdiction": "DE",
+  "category": "consent",
+  "sources": [
+    {
+      "title": "Einwilligungsverwaltungsverordnung (EinwV)",
+      "url": "https://www.gesetze-im-internet.de/einwv/__1.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "info",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "usesNonEssentialStorage"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "pims"
+    }
+  },
+  "manualCheck": "Optional: prüfen, ob der Kunde einen anerkannten Einwilligungsverwaltungsdienst einbinden möchte."
+}

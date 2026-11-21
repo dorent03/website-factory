@@ -1,0 +1,46 @@
+{
+  "id": "de.imprint.business-letters-ag",
+  "title": "Pflichtangaben in E-Mails/Bestellformularen – AG",
+  "description": "Rechtsform, Sitz, Registergericht, HR-Nummer, alle Vorstandsmitglieder (Vorsitzender als solcher bezeichnet) und Aufsichtsratsvorsitzender auf allen Geschäftsbriefen einschließlich E-Mails (§ 80 AktG).",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 80 AktG – Angaben auf Geschäftsbriefen",
+      "url": "https://www.gesetze-im-internet.de/aktg/__80.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [
+      "ag"
+    ],
+    "conditions": []
+  },
+  "requiredFields": [
+    "legalName",
+    "legalForm",
+    "city",
+    "registerCourt",
+    "registerNumber",
+    "representatives"
+  ],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "business-letter-footer",
+      "scope": [
+        "emailTemplates",
+        "orderConfirmation"
+      ],
+      "proposedCheck": "email.business-letter-footer"
+    }
+  },
+  "manualCheck": "Generierte E-Mail-Vorlagen auf vollständige Pflichtangaben prüfen; Aufsichtsratsvorsitz ist nicht im Profil abgebildet."
+}

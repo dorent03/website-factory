@@ -1,0 +1,33 @@
+{
+  "id": "de.privacy.processor-agreements",
+  "title": "Auftragsverarbeitungsverträge mit Dienstleistern",
+  "description": "Hoster, Formular-, Newsletter-, Buchungs- und Analyse-Dienstleister verarbeiten im Auftrag: Vertrag nach Art. 28 Abs. 3 DSGVO erforderlich. Das Bestehen eines Vertrags ist technisch nicht prüfbar.",
+  "jurisdiction": "EU",
+  "category": "privacy",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "processor-agreements",
+      "listFrom": "privacyPolicy.services"
+    }
+  },
+  "manualCheck": "Für jeden als Auftragsverarbeiter eingestuften Dienst bestätigen, dass ein AV-Vertrag (Art. 28 DSGVO) abgeschlossen ist. LAWYER REVIEW bei unklarer Rollenverteilung (Auftragsverarbeitung vs. gemeinsame Verantwortlichkeit)."
+}

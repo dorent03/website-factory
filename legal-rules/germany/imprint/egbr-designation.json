@@ -1,0 +1,45 @@
+{
+  "id": "de.imprint.egbr-designation",
+  "title": "Namenszusatz \"eGbR\" bei eingetragener GbR",
+  "description": "Seit dem MoPeG (01.01.2024) muss eine im Gesellschaftsregister eingetragene GbR den Zusatz \"eingetragene Gesellschaft bürgerlichen Rechts\" oder \"eGbR\" führen (§ 707a Abs. 2 BGB) und Register/Registernummer angeben.",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 707a BGB – Eintragung im Gesellschaftsregister (eGbR)",
+      "url": "https://www.gesetze-im-internet.de/bgb/__707a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [
+      "egbr"
+    ],
+    "conditions": []
+  },
+  "requiredFields": [
+    "legalName",
+    "registerCourt",
+    "registerNumber"
+  ],
+  "automatedCheck": {
+    "checkId": "company.consistency",
+    "params": {
+      "legalForm": "egbr",
+      "requiredNamePattern": "(eingetragene Gesellschaft bürgerlichen Rechts|eGbR)"
+    }
+  },
+  "manualCheck": null
+}

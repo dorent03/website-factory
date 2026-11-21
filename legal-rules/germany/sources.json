@@ -1,0 +1,706 @@
+{
+  "jurisdiction": "DE",
+  "lastReviewed": "2026-11-02",
+  "sourcePolicy": "Primary sources only (statutes, EU acts, official gazettes, DSK/DPA and federal agency material). Entries with type 'guidance' (case law, proceedings status) may support but never solely justify a rule.",
+  "sources": [
+    {
+      "id": "DDG_5",
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Impressum duty for commercial digital services (successor of § 5 TMG since 14.05.2024): name/address, legal form + representative for legal persons, e-mail and fast electronic contact, supervisory authority, register + number, chamber/professional title/rules, USt-IdNr or W-IdNr, liquidation, AVMS data; must be easily recognisable, directly reachable, permanently available.",
+      "usedBy": [
+        "de.imprint.capital-disclosure",
+        "de.imprint.company-consistency",
+        "de.imprint.contact",
+        "de.imprint.economic-id",
+        "de.imprint.egbr-designation",
+        "de.imprint.legal-form",
+        "de.imprint.liquidation-status",
+        "de.imprint.page-reachable",
+        "de.imprint.provider-identity",
+        "de.imprint.register-entry",
+        "de.imprint.regulated-profession",
+        "de.imprint.representatives-legal-persons",
+        "de.imprint.representatives-partnerships",
+        "de.imprint.supervisory-authority",
+        "de.imprint.vat-id"
+      ]
+    },
+    {
+      "id": "DDG_6",
+      "title": "§ 6 DDG – Besondere Pflichten bei kommerziellen Kommunikationen",
+      "url": "https://www.gesetze-im-internet.de/ddg/__6.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Commercial communications must be recognisable as such, the commissioning party identifiable, promotional offers/contests and their conditions clearly stated; no concealment of sender/commercial nature in e-mail header/subject.",
+      "usedBy": [
+        "de.consent.newsletter-unsubscribe",
+        "de.ecommerce.commercial-communication"
+      ]
+    },
+    {
+      "id": "MSTV_18",
+      "title": "§ 18 Medienstaatsvertrag (MStV) – Informationspflichten und Auskunftsrechte (Text gilt ab 01.12.2025)",
+      "url": "https://www.gesetze-bayern.de/Content/Document/MStV-18",
+      "publisher": "Bayerische Staatskanzlei (BAYERN.RECHT, amtliches Landesrechtsportal)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Abs. 1: all telemedia not exclusively personal/family purposes must show name and address (legal persons: also name/address of representative). Abs. 2: journalistic-editorial offers must additionally name a responsible person (name + address) meeting residence/capacity criteria; several responsible persons need their parts marked.",
+      "usedBy": [
+        "de.imprint.editorial-responsible",
+        "de.imprint.page-reachable",
+        "de.imprint.provider-identity",
+        "de.imprint.representatives-legal-persons"
+      ]
+    },
+    {
+      "id": "DLINFOV_2",
+      "title": "§ 2 DL-InfoV – Stets zur Verfügung zu stellende Informationen",
+      "url": "https://www.gesetze-im-internet.de/dlinfov/__2.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Service providers must provide name/Firma with legal form, address, contact (in particular phone and e-mail or fax), register, competent authority for licensed activities, USt-IdNr, regulated profession title/state/chamber, AGB, choice-of-law clauses, guarantees, main features and professional liability insurance (insurer name/address, territorial scope); may be fulfilled electronically.",
+      "usedBy": [
+        "de.imprint.contact",
+        "de.imprint.legal-form",
+        "de.imprint.professional-liability-insurance",
+        "de.imprint.provider-identity",
+        "de.imprint.register-entry",
+        "de.imprint.regulated-profession",
+        "de.imprint.representatives-partnerships",
+        "de.imprint.supervisory-authority",
+        "de.imprint.vat-id"
+      ]
+    },
+    {
+      "id": "HGB_37A",
+      "title": "§ 37a HGB – Angaben auf Geschäftsbriefen des Kaufmanns",
+      "url": "https://www.gesetze-im-internet.de/hgb/__37a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Business letters of a Kaufmann (any form, incl. e-mail) to a specific recipient must state Firma, designation per § 19 Abs. 1 Nr. 1 HGB (e.K.), place of business, register court and HR number; order forms (Bestellscheine) count as business letters.",
+      "usedBy": [
+        "de.imprint.business-letters-kaufmann",
+        "de.imprint.legal-form"
+      ]
+    },
+    {
+      "id": "HGB_125",
+      "title": "§ 125 HGB – Angaben auf Geschäftsbriefen (OHG/KG)",
+      "url": "https://www.gesetze-im-internet.de/hgb/__125.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Business letters of OHG/KG must state Firma, seat, register court and HR number; if no partner is a natural person (e.g. GmbH & Co. KG), also the partners' names and their § 35a GmbHG / § 80 AktG data.",
+      "usedBy": [
+        "de.imprint.business-letters-kaufmann",
+        "de.imprint.representatives-partnerships"
+      ]
+    },
+    {
+      "id": "GMBHG_35A",
+      "title": "§ 35a GmbHG – Angaben auf Geschäftsbriefen",
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__35a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "GmbH (incl. UG) business letters/order forms: legal form, seat, register court, HR number, all managing directors and the supervisory board chair (surname + at least one written-out first name); if capital is mentioned, Stammkapital and outstanding cash contributions.",
+      "usedBy": [
+        "de.imprint.business-letters-gmbh",
+        "de.imprint.capital-disclosure"
+      ]
+    },
+    {
+      "id": "GMBHG_5A",
+      "title": "§ 5a GmbHG – Unternehmergesellschaft",
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__5a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "A GmbH founded below minimum capital must carry \"Unternehmergesellschaft (haftungsbeschränkt)\" or \"UG (haftungsbeschränkt)\" in its Firma.",
+      "usedBy": [
+        "de.imprint.ug-designation"
+      ]
+    },
+    {
+      "id": "AKTG_80",
+      "title": "§ 80 AktG – Angaben auf Geschäftsbriefen",
+      "url": "https://www.gesetze-im-internet.de/aktg/__80.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "AG business letters/order forms: legal form, seat, register court, HR number, all board members and supervisory board chair; chair of the board marked as such; capital rules as in GmbHG.",
+      "usedBy": [
+        "de.imprint.business-letters-ag",
+        "de.imprint.capital-disclosure"
+      ]
+    },
+    {
+      "id": "BGB_707A",
+      "title": "§ 707a BGB – Eintragung im Gesellschaftsregister (eGbR)",
+      "url": "https://www.gesetze-im-internet.de/bgb/__707a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Since MoPeG (01.01.2024) a GbR registered in the Gesellschaftsregister must carry \"eingetragene Gesellschaft bürgerlichen Rechts\" or \"eGbR\"; if no natural person is liable, a liability-limitation designation is required.",
+      "usedBy": [
+        "de.imprint.egbr-designation",
+        "de.imprint.legal-form"
+      ]
+    },
+    {
+      "id": "AO_139C",
+      "title": "§ 139c AO – Wirtschafts-Identifikationsnummer",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__139c.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "W-IdNr is allocated on request of the tax authority, starts with \"DE\"; basis for the W-IdNr disclosure referenced in § 5 Abs. 1 Nr. 6 DDG.",
+      "usedBy": [
+        "de.imprint.economic-id"
+      ]
+    },
+    {
+      "id": "DSGVO",
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "GDPR: principles (Art. 5), lawfulness (Art. 6), conditions for consent incl. withdrawal as easy as giving (Art. 7), transparent information (Art. 12/13), privacy by design/default (Art. 25), processors and DPA contracts (Art. 28), security of processing (Art. 32), third-country transfers (Art. 44 ff.).",
+      "usedBy": [
+        "de.consent.demonstrable",
+        "de.consent.informed",
+        "de.consent.newsletter-opt-in",
+        "de.consent.newsletter-unsubscribe",
+        "de.consent.no-prior-loading",
+        "de.consent.reject-works",
+        "de.consent.third-party-media",
+        "de.consent.withdrawable",
+        "de.imprint.company-consistency",
+        "de.privacy.booking-form-minimization",
+        "de.privacy.contact-form-minimization",
+        "de.privacy.controller-identity",
+        "de.privacy.data-subject-rights",
+        "de.privacy.fonts-local",
+        "de.privacy.images-of-persons",
+        "de.privacy.legal-basis",
+        "de.privacy.no-undeclared-third-parties",
+        "de.privacy.policy-present",
+        "de.privacy.processor-agreements",
+        "de.privacy.retention",
+        "de.privacy.server-logs",
+        "de.privacy.services-documented",
+        "de.privacy.third-country-transfers",
+        "de.privacy.transport-security",
+        "de.privacy.user-accounts",
+        "de.recruiting.applicant-privacy-notice",
+        "de.recruiting.form-minimization",
+        "de.recruiting.legal-basis",
+        "de.recruiting.retention",
+        "de.recruiting.transport-security"
+      ]
+    },
+    {
+      "id": "DPF",
+      "title": "Durchführungsbeschluss (EU) 2023/1795 – Angemessenheit EU-US Data Privacy Framework",
+      "url": "https://eur-lex.europa.eu/eli/dec_impl/2023/1795/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Adequacy decision for US recipients certified under the EU-US Data Privacy Framework; transfers to non-certified US recipients need Art. 46 safeguards (e.g. SCC).",
+      "usedBy": [
+        "de.privacy.third-country-transfers"
+      ]
+    },
+    {
+      "id": "CURIA_C703_25",
+      "title": "EuGH Rs. C-703/25 P (Latombe/Kommission) – Rechtsmittel gegen EuG T-553/23",
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-703/25",
+      "publisher": "Gerichtshof der Europäischen Union (curia.europa.eu)",
+      "type": "guidance",
+      "retrieved": "2026-11-02",
+      "establishes": "Appeal against the General Court judgment of 03.09.2025 upholding the DPF adequacy decision; reported as pending as of mid-2026 (status not verified on curia in this review) – DPF currently valid but at risk.",
+      "usedBy": [
+        "de.privacy.third-country-transfers"
+      ]
+    },
+    {
+      "id": "TDDDG_25",
+      "title": "§ 25 TDDDG – Schutz der Privatsphäre bei Endeinrichtungen",
+      "url": "https://www.gesetze-im-internet.de/ttdsg/__25.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Storing or accessing information on the end user's device requires informed consent per GDPR, unless strictly necessary for a service explicitly requested by the user or solely for transmitting a message (successor of § 25 TTDSG, renamed 14.05.2024).",
+      "usedBy": [
+        "de.consent.informed",
+        "de.consent.no-prior-loading",
+        "de.consent.reject-works",
+        "de.consent.required-determination",
+        "de.consent.third-party-media",
+        "de.privacy.fonts-local"
+      ]
+    },
+    {
+      "id": "TDDDG_19",
+      "title": "§ 19 TDDDG – Technische und organisatorische Vorkehrungen",
+      "url": "https://www.gesetze-im-internet.de/ttdsg/__19.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Providers of commercial digital services must secure their systems according to the state of the art; explicitly names a recognised secure encryption method as such a measure; users must be able to use services protected against third-party knowledge.",
+      "usedBy": [
+        "de.privacy.transport-security",
+        "de.privacy.user-accounts",
+        "de.recruiting.transport-security"
+      ]
+    },
+    {
+      "id": "EINWV",
+      "title": "Einwilligungsverwaltungsverordnung (EinwV)",
+      "url": "https://www.gesetze-im-internet.de/einwv/__1.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "EinwV of 06.02.2025 (BGBl. 2025 I Nr. 32), in force 01.04.2025. Regulates recognised consent-management services (PIMS) under § 26 TDDDG; the provider of the digital service remains responsible for information duties and valid consent; use of a recognised service is voluntary.",
+      "usedBy": [
+        "de.consent.pims-information"
+      ]
+    },
+    {
+      "id": "DSK_OH_DD",
+      "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+      "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+      "publisher": "Datenschutzkonferenz (DSK)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Current (verified on the DSK list 2026-11-02, no newer version) joint DPA guidance on § 25 TDDDG and GDPR for websites/apps: when consent is required, consent-banner design (reject option equivalent to accept), embedding third-party content, legal bases for subsequent processing.",
+      "usedBy": [
+        "de.consent.demonstrable",
+        "de.consent.informed",
+        "de.consent.no-prior-loading",
+        "de.consent.reject-works",
+        "de.consent.required-determination",
+        "de.consent.third-party-media",
+        "de.consent.withdrawable",
+        "de.privacy.contact-form-minimization",
+        "de.privacy.fonts-local",
+        "de.privacy.legal-basis",
+        "de.privacy.no-undeclared-third-parties",
+        "de.privacy.policy-present",
+        "de.privacy.server-logs",
+        "de.privacy.services-documented"
+      ]
+    },
+    {
+      "id": "DSK_OH_LIST",
+      "title": "DSK – Übersicht Orientierungshilfen",
+      "url": "https://datenschutzkonferenz-online.de/orientierungshilfen.html",
+      "publisher": "Datenschutzkonferenz (DSK)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Official list of DSK guidance; used to confirm that OH Digitale Dienste (Nov 2024) is the current version and to monitor new guidance.",
+      "usedBy": []
+    },
+    {
+      "id": "VSBG_36",
+      "title": "§ 36 VSBG – Allgemeine Informationspflicht",
+      "url": "https://www.gesetze-im-internet.de/vsbg/__36.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Traders with a website or AGB must state whether they are willing/obliged to take part in consumer arbitration (exempt from Nr. 1 if ≤10 employees on 31.12. of the previous year); if willing/obliged, name the competent body with address and website.",
+      "usedBy": [
+        "de.ecommerce.vsbg-dispute-info"
+      ]
+    },
+    {
+      "id": "VSBG_37",
+      "title": "§ 37 VSBG – Informationen nach Entstehen der Streitigkeit",
+      "url": "https://www.gesetze-im-internet.de/vsbg/__37.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "After an unresolved dispute the trader must inform the consumer in text form about a competent consumer arbitration body and its willingness to participate (applies regardless of size).",
+      "usedBy": [
+        "de.ecommerce.vsbg-dispute-info"
+      ]
+    },
+    {
+      "id": "ODR_REPEAL",
+      "title": "Verordnung (EU) 2024/3228 – Aufhebung der VO (EU) Nr. 524/2013 (Einstellung der OS-Plattform)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/3228/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Regulation 524/2013 repealed with effect from 20.07.2025; ODR platform discontinued (complaints closed 20.03.2025, all data deleted by 20.07.2025). The Art. 14 duty to link the ODR platform no longer exists.",
+      "usedBy": [
+        "de.ecommerce.odr-link-obsolete"
+      ]
+    },
+    {
+      "id": "PANGV_3",
+      "title": "§ 3 PAngV – Pflicht zur Angabe des Gesamtpreises",
+      "url": "https://www.gesetze-im-internet.de/pangv_2022/__3.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Traders offering or advertising with prices to consumers must state total prices (incl. VAT and other components); split prices require the total to be highlighted.",
+      "usedBy": [
+        "de.ecommerce.price-indication"
+      ]
+    },
+    {
+      "id": "PANGV_4",
+      "title": "§ 4 PAngV – Pflicht zur Angabe des Grundpreises",
+      "url": "https://www.gesetze-im-internet.de/pangv_2022/__4.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Goods sold by weight/volume/length/area require a unit price next to the total price, with listed exceptions.",
+      "usedBy": [
+        "de.ecommerce.price-indication"
+      ]
+    },
+    {
+      "id": "BGB_312I",
+      "title": "§ 312i BGB – Allgemeine Pflichten im elektronischen Geschäftsverkehr",
+      "url": "https://www.gesetze-im-internet.de/bgb/__312i.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Online contracts: input-error correction, Art. 246c EGBGB information before order, immediate electronic order confirmation, contract terms incl. AGB retrievable and storable.",
+      "usedBy": [
+        "de.ecommerce.electronic-commerce-duties"
+      ]
+    },
+    {
+      "id": "BGB_312J",
+      "title": "§ 312j BGB – Besondere Pflichten im elektronischen Geschäftsverkehr gegenüber Verbrauchern",
+      "url": "https://www.gesetze-im-internet.de/bgb/__312j.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "B2C online shops: delivery restrictions and accepted payment methods at the latest at the start of ordering; key information directly before the order; order button labelled \"zahlungspflichtig bestellen\" or equivalent – otherwise no contract.",
+      "usedBy": [
+        "de.ecommerce.button-solution",
+        "de.ecommerce.electronic-commerce-duties"
+      ]
+    },
+    {
+      "id": "BGB_312K",
+      "title": "§ 312k BGB – Kündigung von Verbraucherverträgen im elektronischen Geschäftsverkehr",
+      "url": "https://www.gesetze-im-internet.de/bgb/__312k.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "If consumers can conclude continuing-obligation contracts on a website, a cancellation button (\"Verträge hier kündigen\") with confirmation page must be provided.",
+      "usedBy": [
+        "de.ecommerce.cancellation-button"
+      ]
+    },
+    {
+      "id": "BGB_356A",
+      "title": "§ 356a BGB – Elektronische Widerrufsfunktion bei Fernabsatzverträgen",
+      "url": "https://www.gesetze-im-internet.de/bgb/__356a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "New since 19.06.2026: distance contracts concluded via an online interface require a permanently available, prominent withdrawal function (\"Vertrag widerrufen\") with a confirmation step (\"Widerruf bestätigen\") and an immediate receipt on a durable medium.",
+      "usedBy": [
+        "de.ecommerce.withdrawal-function",
+        "de.ecommerce.withdrawal-information"
+      ]
+    },
+    {
+      "id": "BGBL_2026_28",
+      "title": "Gesetz zur Änderung des Verbrauchervertrags- und des Versicherungsvertragsrechts sowie zur Änderung des Behandlungsvertragsrechts, BGBl. 2026 I Nr. 28 vom 05.02.2026",
+      "url": "https://www.recht.bund.de/bgbl/1/2026/28/VO.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz (Bundesgesetzblatt, recht.bund.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Amending act that introduced § 356a BGB (implementation of Directive (EU) 2023/2673); published 05.02.2026.",
+      "usedBy": [
+        "de.ecommerce.withdrawal-function"
+      ]
+    },
+    {
+      "id": "DIR_2023_2673",
+      "title": "Richtlinie (EU) 2023/2673 – Fernabsatz von Finanzdienstleistungen / Widerrufsfunktion (Art. 11a RL 2011/83/EU)",
+      "url": "https://eur-lex.europa.eu/eli/dir/2023/2673/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Introduced the EU-wide withdrawal function (Art. 11a Consumer Rights Directive); Member State measures apply from 19.06.2026.",
+      "usedBy": [
+        "de.ecommerce.withdrawal-function"
+      ]
+    },
+    {
+      "id": "EGBGB_246A",
+      "title": "Art. 246a § 1 EGBGB – Informationspflichten bei Fernabsatzverträgen",
+      "url": "https://www.gesetze-im-internet.de/bgbeg/art_246a__1.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Pre-contractual information for distance contracts incl. withdrawal right conditions, deadlines and procedure (model withdrawal form/instructions).",
+      "usedBy": [
+        "de.ecommerce.withdrawal-information"
+      ]
+    },
+    {
+      "id": "GPSR",
+      "title": "Verordnung (EU) 2023/988 über die allgemeine Produktsicherheit (GPSR), Art. 19",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/988/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Applies since 13.12.2024. Art. 19: online offers of products must clearly show manufacturer name/trade name, postal and e-mail address, EU responsible person if manufacturer is outside the EU, product identification (incl. picture/type) and warnings/safety information.",
+      "usedBy": [
+        "de.ecommerce.product-safety-info"
+      ]
+    },
+    {
+      "id": "BFSG_1",
+      "title": "§ 1 BFSG – Zweck und Anwendungsbereich",
+      "url": "https://www.gesetze-im-internet.de/bfsg/__1.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "BFSG applies to listed services provided to consumers after 28.06.2025, incl. \"Dienstleistungen im elektronischen Geschäftsverkehr\"; excludes e.g. pre-28.06.2025 recorded media, third-party content not controlled by the operator, archives.",
+      "usedBy": [
+        "de.accessibility.bfsg-applicability"
+      ]
+    },
+    {
+      "id": "BFSG_2",
+      "title": "§ 2 BFSG – Begriffsbestimmungen",
+      "url": "https://www.gesetze-im-internet.de/bfsg/__2.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Nr. 17 Kleinstunternehmen: fewer than 10 employees and annual turnover or balance sheet total ≤ EUR 2 million; Nr. 26 e-commerce services: digital services via websites/apps provided electronically on individual request of a consumer with a view to concluding a consumer contract.",
+      "usedBy": [
+        "de.accessibility.bfsg-applicability"
+      ]
+    },
+    {
+      "id": "BFSG_3",
+      "title": "§ 3 BFSG – Barrierefreiheit (Kleinstunternehmen-Ausnahme Abs. 3)",
+      "url": "https://www.gesetze-im-internet.de/bfsg/__3.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Products/services must be accessible; Abs. 3 exempts micro-enterprises that provide services (not products) from the accessibility requirements.",
+      "usedBy": [
+        "de.accessibility.bfsg-applicability",
+        "de.accessibility.requirements"
+      ]
+    },
+    {
+      "id": "BFSG_14",
+      "title": "§ 14 BFSG – Pflichten des Dienstleistungserbringers",
+      "url": "https://www.gesetze-im-internet.de/bfsg/__14.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Service may only be offered if it meets the BFSGV requirements and the Anlage 3 information (how the service meets the requirements) is published in accessible form; keep it as long as the service is offered; corrective action and notification on non-conformity.",
+      "usedBy": [
+        "de.accessibility.requirements",
+        "de.accessibility.statement"
+      ]
+    },
+    {
+      "id": "BFSG_38",
+      "title": "§ 38 BFSG – Übergangsbestimmungen",
+      "url": "https://www.gesetze-im-internet.de/bfsg/__38.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Transition until 27.06.2030 for services using products lawfully used before 28.06.2025 and for pre-existing service contracts.",
+      "usedBy": []
+    },
+    {
+      "id": "BFSGV_19",
+      "title": "§ 19 BFSGV – Zusätzliche Anforderungen an Dienstleistungen im elektronischen Geschäftsverkehr",
+      "url": "https://www.gesetze-im-internet.de/bfsgv/__19.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "E-commerce services must provide accessibility information on products/services offered and make identification, authentication, security and payment functions perceivable, operable, understandable and robust.",
+      "usedBy": [
+        "de.accessibility.ecommerce-functions"
+      ]
+    },
+    {
+      "id": "BFB_BFSG",
+      "title": "Bundesfachstelle Barrierefreiheit – Das Barrierefreiheitsstärkungsgesetz (BFSG)",
+      "url": "https://www.bundesfachstelle-barrierefreiheit.de/DE/Barrierefreiheitsstaerkungsgesetz/barrierefreiheitsstaerkungsgesetz_node.html",
+      "publisher": "Bundesfachstelle Barrierefreiheit (bei der Deutschen Rentenversicherung Knappschaft-Bahn-See)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Official federal information on BFSG scope (products/services since 28.06.2025, micro-enterprise exemption for services), standards, market surveillance and FAQ.",
+      "usedBy": [
+        "de.accessibility.bfsg-applicability",
+        "de.accessibility.requirements"
+      ]
+    },
+    {
+      "id": "BDSG_26",
+      "title": "§ 26 BDSG – Datenverarbeitung für Zwecke des Beschäftigungsverhältnisses",
+      "url": "https://www.gesetze-im-internet.de/bdsg_2018/__26.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Text unchanged: processing for deciding on establishing employment; consent in employment context. Note: CJEU C-34/21 casts doubt on Abs. 1 S. 1 as an Art. 88 GDPR 'more specific rule' – applicability requires lawyer review; Art. 6(1)(b) GDPR is the usual fallback.",
+      "usedBy": [
+        "de.recruiting.applicant-privacy-notice",
+        "de.recruiting.legal-basis"
+      ]
+    },
+    {
+      "id": "CURIA_C34_21",
+      "title": "EuGH, Urt. v. 30.03.2023, C-34/21 (Hauptpersonalrat der Lehrerinnen und Lehrer)",
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-34/21",
+      "publisher": "Gerichtshof der Europäischen Union (curia.europa.eu)",
+      "type": "guidance",
+      "retrieved": "2026-11-02",
+      "establishes": "National employee-data rules that merely restate GDPR do not qualify under Art. 88 GDPR; relevant to the continued usability of § 26 Abs. 1 S. 1 BDSG.",
+      "usedBy": [
+        "de.recruiting.legal-basis"
+      ]
+    },
+    {
+      "id": "AGG_11",
+      "title": "§ 11 AGG – Ausschreibung",
+      "url": "https://www.gesetze-im-internet.de/agg/__11.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Job advertisements must not discriminate on grounds listed in § 1 AGG (e.g. sex, age, ethnic origin, religion, disability, sexual identity).",
+      "usedBy": [
+        "de.recruiting.form-minimization",
+        "de.recruiting.non-discriminatory-ads"
+      ]
+    },
+    {
+      "id": "AGG_15",
+      "title": "§ 15 AGG – Entschädigung und Schadensersatz (Frist Abs. 4)",
+      "url": "https://www.gesetze-im-internet.de/agg/__15.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Discrimination claims of rejected applicants must be asserted in writing within two months of receiving the rejection – the main driver for applicant-data retention periods.",
+      "usedBy": [
+        "de.recruiting.non-discriminatory-ads",
+        "de.recruiting.retention"
+      ]
+    },
+    {
+      "id": "ARBGG_61B",
+      "title": "§ 61b ArbGG – Klage wegen Benachteiligung",
+      "url": "https://www.gesetze-im-internet.de/arbgg/__61b.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Action for AGG compensation must be filed within three months after the written claim – relevant to how long applicant data may be kept for defence.",
+      "usedBy": [
+        "de.recruiting.retention"
+      ]
+    },
+    {
+      "id": "KUG_22",
+      "title": "§ 22 KunstUrhG – Recht am eigenen Bild",
+      "url": "https://www.gesetze-im-internet.de/kunsturhg/__22.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Images of persons may only be published with the depicted person's consent (exceptions in § 23 KUG); parallel GDPR requirements for identifiable persons.",
+      "usedBy": [
+        "de.privacy.images-of-persons"
+      ]
+    },
+    {
+      "id": "UWG_7",
+      "title": "§ 7 UWG – Unzumutbare Belästigungen",
+      "url": "https://www.gesetze-im-internet.de/uwg_2004/__7.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "E-mail advertising requires prior express consent (Abs. 2 Nr. 2) except the existing-customer exception (Abs. 3); every advertising message needs a valid opt-out address.",
+      "usedBy": [
+        "de.consent.newsletter-opt-in",
+        "de.consent.newsletter-unsubscribe"
+      ]
+    },
+    {
+      "id": "UWG_5B",
+      "title": "§ 5b UWG – Wesentliche Informationen (Abs. 3 Bewertungen)",
+      "url": "https://www.gesetze-im-internet.de/uwg_2004/__5b.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Traders that publish consumer reviews must inform whether and how they ensure that reviews come from consumers who actually used/bought the product (Abs. 3); comparison services on ecological/social features must disclose method (Abs. 3a).",
+      "usedBy": [
+        "de.ecommerce.reviews-and-testimonials"
+      ]
+    },
+    {
+      "id": "UWG_ANHANG",
+      "title": "Anhang zu § 3 Abs. 3 UWG – stets unzulässige geschäftliche Handlungen (Nr. 2a, 4a, 4b, 23b, 23c)",
+      "url": "https://www.gesetze-im-internet.de/uwg_2004/anhang.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "type": "primary",
+      "retrieved": "2026-11-02",
+      "establishes": "Blacklist incl. sustainability labels not based on certification/public authority (Nr. 2a), unsubstantiated generic environmental claims (Nr. 4a), environmental claims about the whole product/business that only concern part of it (Nr. 4b) – transposition of Directive (EU) 2024/825 now in the consolidated text; unverified claims that reviews stem from real customers (Nr. 23b) and fake reviews (Nr. 23c).",
+      "usedBy": [
+        "de.ecommerce.environmental-claims",
+        "de.ecommerce.reviews-and-testimonials"
+      ]
+    },
+    {
+      "id": "CURIA_C649_17",
+      "title": "EuGH, Urt. v. 10.07.2019, C-649/17 (Amazon EU)",
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-649/17",
+      "publisher": "Gerichtshof der Europäischen Union (curia.europa.eu)",
+      "type": "guidance",
+      "retrieved": "2026-11-02",
+      "establishes": "The 'fast contact' duty does not require a telephone number in every case, but an effective direct communication channel besides e-mail.",
+      "usedBy": [
+        "de.imprint.contact"
+      ]
+    },
+    {
+      "id": "CURIA_C673_17",
+      "title": "EuGH, Urt. v. 01.10.2019, C-673/17 (Planet49)",
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-673/17",
+      "publisher": "Gerichtshof der Europäischen Union (curia.europa.eu)",
+      "type": "guidance",
+      "retrieved": "2026-11-02",
+      "establishes": "Pre-ticked boxes do not constitute valid consent for cookies; information on duration and third-party access required.",
+      "usedBy": [
+        "de.consent.no-prior-loading"
+      ]
+    },
+    {
+      "id": "CURIA_C40_17",
+      "title": "EuGH, Urt. v. 29.07.2019, C-40/17 (Fashion ID)",
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-40/17",
+      "publisher": "Gerichtshof der Europäischen Union (curia.europa.eu)",
+      "type": "guidance",
+      "retrieved": "2026-11-02",
+      "establishes": "Website operators embedding third-party plugins that transmit visitor data are joint controllers for collection and transmission.",
+      "usedBy": [
+        "de.consent.third-party-media",
+        "de.privacy.no-undeclared-third-parties"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "de.imprint.economic-id",
+  "title": "Wirtschafts-Identifikationsnummer (W-IdNr.)",
+  "description": "§ 5 Abs. 1 Nr. 6 DDG verlangt auch die W-IdNr. nach § 139c AO, sofern der Anbieter eine besitzt. Die Vergabe durch das BZSt läuft seit Ende 2024 automatisch; es gibt kein Merkmal im Bedingungsvokabular, ob eine W-IdNr. bereits vergeben ist, daher manuelle Prüfung.",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 139c AO – Wirtschafts-Identifikationsnummer",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__139c.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "isCommercial"
+    ]
+  },
+  "requiredFields": [
+    "economicId"
+  ],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "economic-id",
+      "field": "economicId"
+    }
+  },
+  "manualCheck": "LAWYER REVIEW: Klären, ob eine W-IdNr. zugeteilt wurde und ob sie zusätzlich zur USt-IdNr. anzugeben ist (Wortlaut \"oder\" in § 5 Abs. 1 Nr. 6 DDG ist auslegungsbedürftig). Niemals eine Nummer erfinden oder aus der USt-IdNr. ableiten."
+}

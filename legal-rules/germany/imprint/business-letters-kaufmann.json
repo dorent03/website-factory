@@ -1,0 +1,53 @@
+{
+  "id": "de.imprint.business-letters-kaufmann",
+  "title": "Pflichtangaben in E-Mails/Bestellformularen – Kaufleute, OHG, KG",
+  "description": "E-Mails an bestimmte Empfänger und Bestellscheine (auch Online-Bestell-/Anfrageformulare mit Bestätigungsmail) sind Geschäftsbriefe: Firma, Rechtsformzusatz, Ort der Niederlassung bzw. Sitz, Registergericht, HR-Nummer (§ 37a HGB, § 125 HGB). Bei KG ohne natürliche Person als Vollhafter zusätzlich Angaben zur Komplementärin.",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 37a HGB – Angaben auf Geschäftsbriefen des Kaufmanns",
+      "url": "https://www.gesetze-im-internet.de/hgb/__37a.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 125 HGB – Angaben auf Geschäftsbriefen (OHG/KG)",
+      "url": "https://www.gesetze-im-internet.de/hgb/__125.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [
+      "ek",
+      "ohg",
+      "kg"
+    ],
+    "conditions": []
+  },
+  "requiredFields": [
+    "legalName",
+    "legalForm",
+    "city",
+    "registerCourt",
+    "registerNumber"
+  ],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "business-letter-footer",
+      "scope": [
+        "emailTemplates",
+        "orderConfirmation"
+      ],
+      "proposedCheck": "email.business-letter-footer"
+    }
+  },
+  "manualCheck": "Generierte E-Mail-Vorlagen (Formularbestätigung, Bestellbestätigung, Newsletter) auf Pflichtangaben prüfen."
+}

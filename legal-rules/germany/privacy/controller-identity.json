@@ -1,0 +1,48 @@
+{
+  "id": "de.privacy.controller-identity",
+  "title": "Verantwortlicher und Kontaktdaten in der Datenschutzerklärung",
+  "description": "Name und Kontaktdaten des Verantwortlichen (Art. 13 Abs. 1 lit. a DSGVO) sowie ggf. des Datenschutzbeauftragten (lit. b) müssen genannt sein und mit dem Impressum übereinstimmen.",
+  "jurisdiction": "EU",
+  "category": "privacy",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [
+    "legalName",
+    "street",
+    "postalCode",
+    "city",
+    "email"
+  ],
+  "automatedCheck": {
+    "checkId": "company.consistency",
+    "params": {
+      "compare": [
+        "imprint",
+        "privacyPolicy.controller"
+      ],
+      "fields": [
+        "legalName",
+        "street",
+        "postalCode",
+        "city",
+        "email"
+      ]
+    }
+  },
+  "manualCheck": "Prüfen, ob ein Datenschutzbeauftragter benannt werden muss (Art. 37 DSGVO, § 38 BDSG) – falls benannt, Kontaktdaten aufnehmen. Kein Feld im Profil."
+}

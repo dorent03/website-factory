@@ -1,0 +1,43 @@
+{
+  "id": "de.imprint.supervisory-authority",
+  "title": "Zuständige Aufsichtsbehörde bei erlaubnispflichtiger Tätigkeit",
+  "description": "Bei behördlich zulassungspflichtigen Tätigkeiten (z. B. §§ 34c, 34d, 34f GewO, Gaststätten, Bewachung, Heilberufe) ist die zuständige Aufsichtsbehörde anzugeben (§ 5 Abs. 1 Nr. 3 DDG; Name und Anschrift nach § 2 Abs. 1 Nr. 4 DL-InfoV). Ob eine Erlaubnispflicht besteht, ist nicht im Bedingungsvokabular abbildbar.",
+  "jurisdiction": "DE",
+  "category": "imprint",
+  "sources": [
+    {
+      "title": "§ 5 DDG – Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/__5.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 2 DL-InfoV – Stets zur Verfügung zu stellende Informationen",
+      "url": "https://www.gesetze-im-internet.de/dlinfov/__2.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "isCommercial"
+    ]
+  },
+  "requiredFields": [
+    "supervisoryAuthority"
+  ],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "supervisory-authority",
+      "field": "supervisoryAuthority"
+    }
+  },
+  "manualCheck": "Prüfen, ob die Tätigkeit einer behördlichen Zulassung/Erlaubnis bedarf; falls ja, muss supervisoryAuthority im Profil gefüllt und im Impressum angezeigt sein."
+}

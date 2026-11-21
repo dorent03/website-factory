@@ -1,0 +1,41 @@
+{
+  "id": "de.privacy.transport-security",
+  "title": "Verschlüsselte Übertragung (HTTPS)",
+  "description": "Gesamte Website und alle Formulare nur über TLS (HTTPS, gültiges Zertifikat, keine Mixed Content, Redirect von HTTP). § 19 Abs. 4 TDDDG nennt ein als sicher anerkanntes Verschlüsselungsverfahren ausdrücklich als Maßnahme; Art. 32 DSGVO verlangt angemessene Sicherheit.",
+  "jurisdiction": "DE",
+  "category": "privacy",
+  "sources": [
+    {
+      "title": "§ 19 TDDDG – Technische und organisatorische Vorkehrungen",
+      "url": "https://www.gesetze-im-internet.de/ttdsg/__19.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "forms.transport-security",
+    "params": {
+      "requireHttps": true,
+      "requireHttpRedirect": true,
+      "forbidMixedContent": true,
+      "minTlsVersion": "1.2"
+    }
+  },
+  "manualCheck": null
+}

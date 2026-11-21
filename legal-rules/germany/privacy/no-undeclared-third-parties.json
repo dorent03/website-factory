@@ -1,0 +1,45 @@
+{
+  "id": "de.privacy.no-undeclared-third-parties",
+  "title": "Keine nicht deklarierten Drittanbieter",
+  "description": "Jede Netzwerkverbindung zu Dritt-Hosts (CDNs, Fonts, Maps, Video, Tracking, Chat) überträgt mindestens die IP-Adresse und braucht eine Rechtsgrundlage und Erwähnung in der Datenschutzerklärung (Art. 5 Abs. 1 lit. a, Art. 6, Art. 13 DSGVO). Websites mit eingebetteten Plugins sind ggf. gemeinsam Verantwortliche (EuGH C-40/17).",
+  "jurisdiction": "EU",
+  "category": "privacy",
+  "sources": [
+    {
+      "title": "Verordnung (EU) 2016/679 (DSGVO), insbesondere Art. 5, 6, 7, 12, 13, 25, 28, 32, 44–49",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "publisher": "Amt für Veröffentlichungen der EU (EUR-Lex)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "DSK – Orientierungshilfe der Aufsichtsbehörden für Anbieter:innen von digitalen Diensten (OH Digitale Dienste), Version 1.2, November 2024",
+      "url": "https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf",
+      "publisher": "Datenschutzkonferenz (DSK)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "EuGH, Urt. v. 29.07.2019, C-40/17 (Fashion ID)",
+      "url": "https://curia.europa.eu/juris/liste.jsf?num=C-40/17",
+      "publisher": "Gerichtshof der Europäischen Union (curia.europa.eu)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "blocker",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": []
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "privacy.no-undeclared-third-parties",
+    "params": {
+      "compareNetworkRequestsTo": "privacyPolicy.services",
+      "ignoreFirstPartyHosts": true
+    }
+  },
+  "manualCheck": null
+}

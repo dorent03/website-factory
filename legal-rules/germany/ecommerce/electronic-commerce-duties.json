@@ -1,0 +1,40 @@
+{
+  "id": "de.ecommerce.electronic-commerce-duties",
+  "title": "Pflichten im elektronischen Geschäftsverkehr",
+  "description": "Eingabefehler-Korrektur vor Bestellung, Informationen nach Art. 246c EGBGB, unverzügliche elektronische Eingangsbestätigung, AGB bei Vertragsschluss abrufbar und speicherbar (§ 312i Abs. 1 BGB); Lieferbeschränkungen und Zahlungsmittel spätestens bei Beginn des Bestellvorgangs (§ 312j Abs. 1 BGB).",
+  "jurisdiction": "DE",
+  "category": "ecommerce",
+  "sources": [
+    {
+      "title": "§ 312i BGB – Allgemeine Pflichten im elektronischen Geschäftsverkehr",
+      "url": "https://www.gesetze-im-internet.de/bgb/__312i.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "title": "§ 312j BGB – Besondere Pflichten im elektronischen Geschäftsverkehr gegenüber Verbrauchern",
+      "url": "https://www.gesetze-im-internet.de/bgb/__312j.html",
+      "publisher": "Bundesministerium der Justiz und für Verbraucherschutz / juris (gesetze-im-internet.de)",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "lastReviewed": "2026-11-02",
+  "ruleVersion": "1.0.0",
+  "severity": "major",
+  "appliesWhen": {
+    "siteTypes": [],
+    "modules": [],
+    "legalForms": [],
+    "conditions": [
+      "hasShop"
+    ]
+  },
+  "requiredFields": [],
+  "automatedCheck": {
+    "checkId": "module.manual-review",
+    "params": {
+      "topic": "e-commerce-duties"
+    }
+  },
+  "manualCheck": "Bestellstrecke durchklicken und Pflichtinformationen prüfen."
+}
